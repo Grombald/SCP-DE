@@ -40,7 +40,18 @@
     content: "Administratorin, News-Team";
 }
 
-
+/* Rik */
+.printuser a:only-child[href*=rikjard-regreps]::before {
+    background: var(--de_o4);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=rikjard-regreps]::after {
+    background: var(--de_o4);
+    content: " ";
+}
+.printuser a:last-child[href*=rikjard-regreps]:hover::after {
+    content: "Administrator";
+}
 
 /* Freigabe + News + Mentor */
 /*.printuser a:only-child[href*=]::before {
@@ -230,15 +241,18 @@
 }
 
 /* Freigabe */
-/*.printuser a:only-child[href*=ibimsbluexiio]::before {
+.printuser a:only-child[href*=Allnyta]::before,
+.printuser a:only-child[href*=Rossboss02]::before {
     background: var(--de_fb);
     content: " ";
 	width: 8px;
 }
-.printuser > a:first-child:not(:only-child)[href*=ibimsbluexiio]::after {
+.printuser > a:first-child:not(:only-child)[href*=Allnyta]::after,
+.printuser > a:first-child:not(:only-child)[href*=Rossboss02]::after {
     background: var(--de_fb);
     content: " ";
 }
-.printuser a:last-child[href*=ibimsbluexiio]:hover::after {
+.printuser a:last-child[href*=Allnyta]:hover::after,
+.printuser a:last-child[href*=Rossboss02]:hover::after {
     content: "Freigabebeauftragter";
 }*/
