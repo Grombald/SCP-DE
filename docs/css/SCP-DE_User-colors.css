@@ -291,4 +291,4 @@
 .printuser a:last-child[href*=Allnyta]:hover::after,
 .printuser a:last-child[href*=Rossboss02]:hover::after {
     content: "Freigabebeauftragter";
-}*/
+}
