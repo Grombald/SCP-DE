@@ -277,18 +277,18 @@
 }
 
 /* Freigabe */
-.printuser a:only-child[href*=Allnyta]::before,
-.printuser a:only-child[href*=Rossboss02]::before {
+.printuser a:only-child[href*=allnyta]::before,
+.printuser a:only-child[href*=rossboss02]::before {
     background: var(--de_fb);
     content: " ";
 	width: 8px;
 }
-.printuser > a:first-child:not(:only-child)[href*=Allnyta]::after,
-.printuser > a:first-child:not(:only-child)[href*=Rossboss02]::after {
+.printuser > a:first-child:not(:only-child)[href*=allnyta]::after,
+.printuser > a:first-child:not(:only-child)[href*=rossboss02]::after {
     background: var(--de_fb);
     content: " ";
 }
-.printuser a:last-child[href*=Allnyta]:hover::after,
-.printuser a:last-child[href*=Rossboss02]:hover::after {
+.printuser a:last-child[href*=allnyta]:hover::after,
+.printuser a:last-child[href*=rossboss02]:hover::after {
     content: "Freigabebeauftragter";
 }
