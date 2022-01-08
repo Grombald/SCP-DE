@@ -67,6 +67,47 @@
     content: "Administrator";
 }
 
+/* Kibanashote */
+*.printuser a:only-child[href*=kibanashote]::before {
+    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_nt) 34%, var(--de_nt) 64%, var(--de_mt) 66%);
+    content: " ";
+	width: 24px;
+}
+.printuser > a:first-child:not(:only-child)[href*=kibanashote]::after {
+    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_nt) 5px, var(--de_nt) 9px, #2c2c2c, var(--de_mt) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=kibanashote]:hover::after {
+    content: "Administrator, News-Team, Mentor";
+}
+
+/* Cyberion */
+.printuser a:only-child[href*=doktor-cyberion]::before {
+    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_ub) 34%, var(--de_ub) 64%, var(--de_mt) 66%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=doktor-cyberion]::after {
+    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_ub) 5px, var(--de_ub) 9px, #2c2c2c, var(--de_mt) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=doktor-cyberion]:hover::after {
+    content: "Administrator, Übersetzer, Mentor";
+}
+
+/* Rossboss */
+.printuser a:only-child[href*=rossboss02]::before {
+    background: linear-gradient(110deg, var(--de_o4) 49%, var(--de_fb) 51%);
+    content: " ";
+	width: 24px;
+}
+.printuser > a:first-child:not(:only-child)[href*=rossboss02]::after {
+    background: linear-gradient(var(--de_o4) 6px, #2c2c2c 7px, var(--de_fb) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=rossboss02]:hover::after {
+    content: "Administrator, Freigabebeauftragter";
+}
+
 /* Sebzumbruck Mod, Freigabe, News, Mentor */
 *.printuser a:only-child[href*=sebzumbruck]::before {
     background: linear-gradient(110deg, var(--de_md) 32%, var(--de_nt) 34%, var(--de_nt) 64%, var(--de_fb) 66%);
@@ -79,20 +120,6 @@
 }
 .printuser a:last-child[href*=sebzumbruck]:hover::after {
     content: "Freigabebeauftragter, News-Team, Moderator";
-}*
-
-/* Kibanashote Mod, News, Mentor */
-*.printuser a:only-child[href*=kibanashote]::before {
-    background: linear-gradient(110deg, var(--de_md) 32%, var(--de_nt) 34%, var(--de_nt) 64%, var(--de_mt) 66%);
-    content: " ";
-	width: 24px;
-}
-.printuser > a:first-child:not(:only-child)[href*=kibanashote]::after {
-    background: linear-gradient(var(--de_md) 4px, #2c2c2c, var(--de_nt) 5px, var(--de_nt) 9px, #2c2c2c, var(--de_mt) 10px);
-    content: " ";
-}
-.printuser a:last-child[href*=kibanashote]:hover::after {
-    content: "Moderator, News-Team, Mentor";
 }*
 
 /* Freigabe + News + Mentor */
@@ -174,19 +201,6 @@
 }
 .printuser a:last-child[href*=arogas]:hover::after {
     content: "News-Team, Mentor";
-}
-
-/* Übersetzer + Mentor */
-.printuser a:only-child[href*=doktor-cyberion]::before {
-    background: linear-gradient(110deg, var(--de_ub) 49%, var(--de_mt) 51%);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=doktor-cyberion]::after {
-    background: linear-gradient(var(--de_ub) 6px, #2c2c2c 7px, var(--de_mt) 7px);
-    content: " ";
-}
-.printuser a:last-child[href*=doktor-cyberion]:hover::after {
-    content: "Übersetzer, Mentor";
 } 
 
 /* Übersetzer + Korrektur */
@@ -290,19 +304,16 @@
 }
 
 /* Freigabe */
-.printuser a:only-child[href*=allnyta]::before,
-.printuser a:only-child[href*=rossboss02]::before {
+.printuser a:only-child[href*=allnyta]::before {
     background: var(--de_fb);
     content: " ";
 	width: 8px;
 }
-.printuser > a:first-child:not(:only-child)[href*=allnyta]::after,
-.printuser > a:first-child:not(:only-child)[href*=rossboss02]::after {
+.printuser > a:first-child:not(:only-child)[href*=allnyta]::after {
     background: var(--de_fb);
     content: " ";
 }
-.printuser a:last-child[href*=allnyta]:hover::after,
-.printuser a:last-child[href*=rossboss02]:hover::after {
+.printuser a:last-child[href*=allnyta]:hover::after {
     content: "Freigabebeauftragter";
 }
 
