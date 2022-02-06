@@ -13,20 +13,6 @@
     content: "Administrator, Technik-Team";
 }
 
-/* Robin */
-.printuser a:only-child[href*=robini]::before {
-    background: linear-gradient(110deg, var(--de_o4) 49%, var(--de_fb) 51%);
-    content: " ";
-	width: 24px;
-}
-.printuser > a:first-child:not(:only-child)[href*=robini]::after {
-    background: linear-gradient(var(--de_o4) 6px, #2c2c2c 7px, var(--de_fb) 7px);
-    content: " ";
-}
-.printuser a:last-child[href*=robini]:hover::after {
-    content: "Administrator, Freigabebeauftragter";
-}
-
 /* Rik */
 .printuser a:only-child[href*=rikjard-regreps]::before {
     background: var(--de_o4);
@@ -305,24 +291,19 @@
 
 /* Freigabe*/
 
-/* Noch kein einzelner Freigabebeauftragter 
-
-Beispielcode: 
-
-.printuser a:only-child[href*=name]::before {
+.printuser a:only-child[href*=robini]::before {
     background: var(--de_fb);
     content: " ";
 	width: 8px;
 }
-.printuser > a:first-child:not(:only-child)[href*=name]::after {
+.printuser > a:first-child:not(:only-child)[href*=robini]::after {
     background: var(--de_fb);
     content: " ";
 }
-.printuser a:last-child[href*=name]:hover::after {
+.printuser a:last-child[href*=robini]:hover::after {
     content: "Freigabebeauftragter";
 }
 
-*/
 
 /* Mentor */
 .printuser a:only-child[href*=gramlin]::before {
