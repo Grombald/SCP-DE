@@ -105,7 +105,7 @@
     content: " ";
 }
 .printuser a:last-child[href*=sebzumbruck]:hover::after {
-    content: "Freigabebeauftragter, News-Team, Moderator";
+    content: "Moderator, Freigabebeauftragter, News-Team";
 }*
 
 /* Flaming, Mod, Korrektur, Mentor */
