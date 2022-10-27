@@ -217,15 +217,15 @@
 } 
 
 /* Vertonungsbeauftragter + News Team */
-.printuser a:only-child[href*=/pesti/]::before {
+.printuser a:only-child[href*=/pesti]::before {
     background: linear-gradient(110deg, var(--de_vb) 49%, var(--de_nt) 51%);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=/pesti/]::after{
+.printuser > a:first-child:not(:only-child)[href*=/pesti]::after{
     background: linear-gradient(var(--de_vb) 6px, #2c2c2c 7px, var(--de_nt) 7px);
     content: " ";
 }
-.printuser a:last-child[href*=/pesti/]:hover::after{
+.printuser a:last-child[href*=/pesti]:hover::after{
     content: "Vertonungsbeauftragter, News-Team";
 } 
 
