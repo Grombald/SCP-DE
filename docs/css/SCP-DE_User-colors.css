@@ -39,6 +39,20 @@
     content: "Administrator";
 }
 
+/* Robini */
+.printuser a:only-child[href*=robini]::before {
+    background: var(--de_o4);
+    content: " ";
+	width: 8px;
+}
+.printuser > a:first-child:not(:only-child)[href*=robini]::after {
+    background: var(--de_o4);
+    content: " ";
+}
+.printuser a:last-child[href*=robini]:hover::after {
+    content: "Administrator";
+}
+
 /* Kibanashote */
 *.printuser a:only-child[href*=kibanashote]::before {
     background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_nt) 34%, var(--de_nt) 64%, var(--de_mt) 66%);
@@ -203,15 +217,15 @@
 } 
 
 /* Vertonungsbeauftragter + News Team */
-.printuser a:only-child[href*=/pesti]::before {
+.printuser a:only-child[href*=pesti]::before {
     background: linear-gradient(110deg, var(--de_vb) 49%, var(--de_nt) 51%);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=/pesti]::after{
+.printuser > a:first-child:not(:only-child)[href*=pesti]::after{
     background: linear-gradient(var(--de_vb) 6px, #2c2c2c 7px, var(--de_nt) 7px);
     content: " ";
 }
-.printuser a:last-child[href*=/pesti]:hover::after{
+.printuser a:last-child[href*=pesti]:hover::after{
     content: "Vertonungsbeauftragter, News-Team";
 } 
 
@@ -290,20 +304,18 @@
 }
 
 /* Freigabe*/
-
-.printuser a:only-child[href*=robini]::before {
+.printuser a:only-child[href*=rogarrabbit]::before {
     background: var(--de_fb);
     content: " ";
 	width: 8px;
 }
-.printuser > a:first-child:not(:only-child)[href*=robini]::after {
+.printuser > a:first-child:not(:only-child)[href*=rogarrabbit]::after {
     background: var(--de_fb);
     content: " ";
 }
-.printuser a:last-child[href*=robini]:hover::after {
+.printuser a:last-child[href*=rogarrabbit]:hover::after{
     content: "Freigabebeauftragter";
 }
-
 
 /* Mentor */
 .printuser a:only-child[href*=gramlin]::before {
