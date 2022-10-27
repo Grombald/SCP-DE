@@ -286,20 +286,23 @@
 /* Übersetzer */
 .printuser a:only-child[href*=alphaorion]::before,
 .printuser a:only-child[href*=archetyp]::before,
-.printuser a:only-child[href*=drpeterwenzel]::before {
+.printuser a:only-child[href*=drpeterwenzel]::before,
+.printuser a:only-child[href*=dr_kuttelfisch]::before {
     background: var(--de_ub);
     content: " ";
 	width: 8px;
 }
 .printuser > a:first-child:not(:only-child)[href*=alphaorion]::after,
 .printuser > a:first-child:not(:only-child)[href*=drpeterwenzel]::after,
-.printuser > a:first-child:not(:only-child)[href*=archetyp]::after {
+.printuser > a:first-child:not(:only-child)[href*=archetyp]::after,
+.printuser > a:first-child:not(:only-child)[href*=dr_kuttelfisch]::after {
     background: var(--de_ub);
     content: " ";
 }
 .printuser a:last-child[href*=alphaorion]:hover::after,
 .printuser a:last-child[href*=archetyp]:hover::after,
-.printuser a:last-child[href*=drpeterwenzel]:hover::after {
+.printuser a:last-child[href*=drpeterwenzel]:hover::after,
+.printuser a:last-child[href*=dr_kuttelfisch]:hover::after {
     content: "Übersetzer";
 }
 
