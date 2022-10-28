@@ -334,8 +334,8 @@
     background: var(--de_fb);
     content: " ";
 }
-.printuser a:last-child[href*=rogarrabbit]:hover::after
-.printuser a:last-child[href*=dr-himy]:hover::after, {
+.printuser a:last-child[href*=rogarrabbit]:hover::after,
+.printuser a:last-child[href*=dr-himy]:hover::after {
     content: "Freigabebeauftragter";
 }
 
