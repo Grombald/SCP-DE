@@ -349,6 +349,6 @@
     background: var(--de_mt);
     content: " ";
 }
-.printuser a:last-child[href*=gramlin]:hover::after {
+.printuser a:last-child[href*=gramlin]:hover::after{
     content: "Mentor";
 }
