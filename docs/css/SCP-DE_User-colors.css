@@ -340,15 +340,18 @@
 }
 
 /* Mentor */
-.printuser a:only-child[href*=gramlin]::before {
+.printuser a:only-child[href*=gramlin]::before,
+.printuser a:only-child[href*=thepapermask]::before {
     background: var(--de_mt);
     content: " ";
 	width: 8px;
 }
-.printuser > a:first-child:not(:only-child)[href*=gramlin]::after {
+.printuser > a:first-child:not(:only-child)[href*=gramlin]::after,
+.printuser a:only-child[href*=thepapermask]::before {
     background: var(--de_mt);
     content: " ";
 }
-.printuser a:last-child[href*=gramlin]:hover::after{
+.printuser a:last-child[href*=gramlin]:hover::after,
+.printuser a:only-child[href*=thepapermask]::before{
     content: "Mentor";
 }
