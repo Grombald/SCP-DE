@@ -68,7 +68,7 @@ Verfügbare Farb-Parameter:
     content: "Freigabebeauftragter";
 }
 
-
+/* Karpfisch */
 .printuser a:only-child[href*=karpfisch]::before {
     background: var(--de_o4);
     content: " ";
