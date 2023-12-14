@@ -243,6 +243,7 @@ Verfügbare Farb-Parameter:
 }
 .printuser > a:first-child:not(:only-child)[href*=alphaorion]::after,
 .printuser > a:first-child:not(:only-child)[href*=archetyp]::after {
+.printuser > a:first-child:not(:only-child)[href*=drpeterwenzel]::after,
     background: var(--de_ub);
     content: " ";
 }
