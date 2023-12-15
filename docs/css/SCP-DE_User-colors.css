@@ -234,24 +234,44 @@ Verfügbare Farb-Parameter:
 }
 
 /* Übersetzer */
-.printuser a:only-child[href*=alphaorion]::before,
-.printuser a:only-child[href*=archetyp]::before,
+
+}
 .printuser a:only-child[href*=drpeterwenzel]::before {
     background: var(--de_ub);
     content: " ";
-	width: 8px;
 }
-.printuser > a:first-child:not(:only-child)[href*=alphaorion]::after,
-.printuser > a:first-child:not(:only-child)[href*=archetyp]::after 
-.printuser > a:first-child:not(:only-child)[href*=drpeterwenzel]::after, {
+.printuser > a:first-child:not(:only-child)[href*=drpeterwenzel]::after {
     background: var(--de_ub);
     content: " ";
 }
-.printuser a:last-child[href*=alphaorion]:hover::after,
-.printuser a:last-child[href*=archetyp]:hover::after,
 .printuser a:last-child[href*=drpeterwenzel]:hover::after {
     content: "Übersetzer";
 }
+
+.printuser a:only-child[href*=archetyp]::before {
+    background: var(--de_ub);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=archetyp]::after {
+    background: var(--de_ub);
+    content: " ";
+}
+.printuser a:last-child[href*=archetyp]:hover::after {
+    content: "Übersetzer";
+}
+
+.printuser a:only-child[href*=alphaorion]::before {
+    background: var(--de_ub);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=alphaorion]::after {
+    background: var(--de_ub);
+    content: " ";
+}
+.printuser a:last-child[href*=alphaorion]:hover::after {
+    content: "Übersetzer";
+}
+
 .printuser a:only-child[href*=dr-nieliux]::before {
     background: var(--de_ub);
     content: " ";
