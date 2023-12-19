@@ -77,7 +77,7 @@ Verfügbare Farb-Parameter:
     background: var(--de_o4);
     content: " ";
 }
-.printuser a:last-child[href*=rossboss02]:hover::after {
+.printuser a:last-child[href*=karpfisch]:hover::after {
     content: "Administrator";
 }
 
