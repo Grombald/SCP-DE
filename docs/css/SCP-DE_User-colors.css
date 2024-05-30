@@ -311,16 +311,16 @@ Verfügbare Farb-Parameter:
     content: "Freigabebeauftragter";
 }
 
-.printuser a:only-child[href*=TheValutater]::before {
+.printuser a:only-child[href*=thevalutater]::before {
     background: var(--de_fb);
     content: " ";
 	width: 8px;
 }
-.printuser > a:first-child:not(:only-child)[href*=TheValutater]::after {
+.printuser > a:first-child:not(:only-child)[href*=thevalutater]::after {
     background: var(--de_fb);
     content: " ";
 }
-.printuser a:last-child[href*=TheValutater]:hover::after {
+.printuser a:last-child[href*=thevalutater]:hover::after {
     content: "Freigabebeauftragter";
 }
 
