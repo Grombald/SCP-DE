@@ -311,6 +311,19 @@ Verfügbare Farb-Parameter:
     content: "Freigabebeauftragter";
 }
 
+.printuser a:only-child[href*=TheValutater]::before {
+    background: var(--de_fb);
+    content: " ";
+	width: 8px;
+}
+.printuser > a:first-child:not(:only-child)[href*=TheValutater]::after {
+    background: var(--de_fb);
+    content: " ";
+}
+.printuser a:last-child[href*=TheValutater]:hover::after {
+    content: "Freigabebeauftragter";
+}
+
 /* Mentor */
 .printuser a:only-child[href*=gramlin]::before,
 .printuser a:only-child[href*=thepapermask]::before {
