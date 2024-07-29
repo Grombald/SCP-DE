@@ -69,6 +69,20 @@ Verfügbare Farb-Parameter:
 }
 
 
+/* Karpfisch */
+.printuser a:only-child[href*=karpfisch]::before {
+    background: var(--de_o4);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=karpfisch]::after {
+    background: var(--de_o4);
+    content: " ";
+}
+.printuser a:last-child[href*=karpfisch]:hover::after {
+    content: "Administrator";
+}
+
+
 /* Kuttelfisch */
 .printuser a:only-child[href*=dr-kuttelfisch]::before {
     background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_fb) 34%, var(--de_fb) 64%, var(--de_ub) 66%);
