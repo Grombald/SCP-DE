@@ -68,10 +68,7 @@ Verfügbare Farb-Parameter:
     content: "Freigabebeauftragter";
 }
 
-/* Karpfisch */
-.printuser a:last-child[href*=karpfisch]:hover::after {
-    content: "";
-}
+
 
 /* Kuttelfisch */
 .printuser a:only-child[href*=dr-kuttelfisch]::before {
