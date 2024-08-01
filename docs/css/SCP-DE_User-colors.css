@@ -127,6 +127,20 @@ Verfügbare Farb-Parameter:
     content: "Administrator, Übersetzer, Mentor";
 }
 
+
+/* Dr Nieliux */
+.printuser a:only-child[href*=dr-nieliux]::before{
+    background: linear-gradient(110deg, var(--de_md) 49%, var(--de_ub) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=dr-nieliux]::after{
+    background: linear-gradient(var(--de_md) 6px, #2c2c2c 7px, var(--de_ub) 7px);
+    content: "Moderator, Übersetzer";
+}
+.printuser a:last-child[href*=dr-nieliux]:hover::after {
+    content: "XX, YY";
+}
+
 /* Flaming, Korrektur, Mentor */
 .printuser a:only-child[href*=flaming2204]::before {
     background: linear-gradient(110deg, var(--de_kb) 49%, var(--de_mt) 51%);
