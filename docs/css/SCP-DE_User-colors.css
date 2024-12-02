@@ -98,7 +98,7 @@ Verfügbare Farb-Parameter:
 }
 
 /* Kibanashote */
-*.printuser a:only-child[href*=kibanashote]::before {
+.printuser a:only-child[href*=kibanashote]::before {
     background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_nt) 34%, var(--de_nt) 64%, var(--de_mt) 66%);
     content: " ";
 	width: 24px;
@@ -297,6 +297,18 @@ Verfügbare Farb-Parameter:
     content: " ";
 }
 .printuser a:last-child[href*=dr-himy]:hover::after {
+    content: "Freigabebeauftragter";
+}
+
+.printuser a:only-child[href*=dyten]::before {
+    background: var(--de_fb);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=dyten]::after {
+    background: var(--de_fb);
+    content: " ";
+}
+.printuser a:last-child[href*=dyten]:hover::after {
     content: "Freigabebeauftragter";
 }
 
