@@ -300,15 +300,15 @@ Verfügbare Farb-Parameter:
     content: "Freigabebeauftragter";
 }
 
-.printuser a:only-child[href*=dyten]::before {
+.printuser a:only-child[href*=Dyten]::before {
     background: var(--de_fb);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=dyten]::after {
+.printuser > a:first-child:not(:only-child)[href*=Dyten]::after {
     background: var(--de_fb);
     content: " ";
 }
-.printuser a:last-child[href*=dyten]:hover::after {
+.printuser a:last-child[href*=Dyten]:hover::after {
     content: "Freigabebeauftragter";
 }
 
