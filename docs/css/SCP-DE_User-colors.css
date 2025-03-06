@@ -67,8 +67,6 @@ Verfügbare Farb-Parameter:
     content: "Übersetzer";
 }
 
-/* --------------------------*/
-
 /* Archetyp , Übersetzer */
 .printuser a:only-child[href*=archetyp]::before {
     background: var(--de_ub);
@@ -81,8 +79,6 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=archetyp]:hover::after {
     content: "Übersetzer";
 }
-
-/* --------------------------*/
 
 /* Balthuris , Übersetzer */
 .printuser a:only-child[href*=balthuris]::before {
@@ -97,8 +93,6 @@ Verfügbare Farb-Parameter:
     content: "Übersetzer";
 }
 
-/* --------------------------*/
-
 /* Dr Ore , Freigabe */
 .printuser a:only-child[href*=dr-ore]::before {
     background: var(--de_fb);
@@ -112,8 +106,6 @@ Verfügbare Farb-Parameter:
     content: "Freigabebeauftragter";
 }
 
-/* --------------------------*/
-
 /* DrPeterWenzel , Übersetzer */
 .printuser a:only-child[href*=drpeterwenzel]::before {
     background: var(--de_ub);
@@ -126,8 +118,6 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=drpeterwenzel]:hover::after {
     content: "Übersetzer";
 }
-
-/* --------------------------*/
 
 /* Evil Santa , Korrektur */
 .printuser a:only-child[href*=evil-santa]::before {
@@ -143,8 +133,6 @@ Verfügbare Farb-Parameter:
     content: "Korrekturbeauftragter";
 }
 
-/* --------------------------*/
-
 /* Gramlin , Mentor */
 .printuser a:only-child[href*=gramlin]::before {
     background: var(--de_mt);
@@ -157,8 +145,6 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=gramlin]:hover::after {
     content: "Mentor";
 }
-
-/* --------------------------*/
 
 /* ibimsbluexiio , News-Team */
 .printuser a:only-child[href*=ibimsbluexiio]::before {
@@ -173,8 +159,6 @@ Verfügbare Farb-Parameter:
     content: "News-Team";
 }
 
-/* --------------------------*/
-
 /* Nylo , Mentor */
 .printuser a:only-child[href*=nylo]::before {
     background: var(--de_mt);
@@ -188,7 +172,18 @@ Verfügbare Farb-Parameter:
     content: "Mentor";
 }
 
-/* --------------------------*/
+/* Robini , Mentor */
+.printuser a:only-child[href*=robini]::before {
+    background: var(--de_mt);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=robini]::after {
+    background: var(--de_mt);
+    content: " ";
+}
+.printuser a:last-child[href*=robini]:hover::after {
+    content: "Mentor";
+}
 
 /* RogarRabbit , Freigabe */
 .printuser a:only-child[href*=rogarrabbit]::before {
@@ -204,8 +199,6 @@ Verfügbare Farb-Parameter:
     content: "Freigabebeauftragter";
 }
 
-/* --------------------------*/
-
 /* Rossboss , O4 */
 .printuser a:only-child[href*=rossboss02]::before {
     background: var(--de_o4);
@@ -218,8 +211,6 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=rossboss02]:hover::after {
     content: "Master-Administrator";
 }
-
-/* --------------------------*/
 
 /* Suvari , Technik-Team */
 .printuser a:only-child[href*=survari]::before {
@@ -235,8 +226,6 @@ Verfügbare Farb-Parameter:
     content: "Technik-Team";
 }
 
-/* --------------------------*/
-
 /* ThePaperMask , Mentor */
 .printuser a:only-child[href*=thepapermask]::before {
     background: var(--de_mt);
@@ -249,8 +238,6 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=thepapermask]:hover::after {
     content: "Mentor";
 }
-
-/* --------------------------*/
 
 /* TheValutater , Freigabe */
 .printuser a:only-child[href*=thevalutater]::before {
@@ -265,7 +252,6 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=thevalutater]:hover::after {
     content: "Freigabebeauftragter";
 }
-
 
 /* ----- Zwei Rollen -----*/
 
@@ -283,8 +269,6 @@ Verfügbare Farb-Parameter:
     content: "Moderator, Freigabebeauftragter";
 }
 
-/* --------------------------*/
-
 /* Dr Nieliux , Moderator, Übersetzer*/
 .printuser a:only-child[href*=dr-nieliux]::before{
     background: linear-gradient(110deg, var(--de_md) 49%, var(--de_ub) 51%);
@@ -297,8 +281,6 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=dr-nieliux]:hover::after {
     content: "Moderator, Übersetzer";
 }
-
-/* --------------------------*/
 
 /* Dr Nordsee , Freigabe, Mentor */
 .printuser a:only-child[href*=dr-nordsee]::before{
@@ -313,8 +295,6 @@ Verfügbare Farb-Parameter:
     content: "Freigabebeauftragter, Mentor";
 }
 
-/* --------------------------*/
-
 /* Dyten , Freigabe, Mentor */
 .printuser a:only-child[href*=dyten]::before{
     background: linear-gradient(110deg, var(--de_fb) 49%, var(--de_mt) 51%);
@@ -326,8 +306,6 @@ Verfügbare Farb-Parameter:
 }
 .printuser a:last-child[href*=dyten]:hover::after {
     content: "Freigabebeauftragter, Mentor";
-
-/* --------------------------*/
 
 /* Flaming , Korrektur, Mentor */
 .printuser a:only-child[href*=flaming2204]::before {
@@ -342,8 +320,6 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=flaming2204]:hover::after {
     content: "Korrekturbeauftragter, Mentor";
 }
-
-/* --------------------------*/
 
 /* Pesti , Vertonungsbeauftragter, News-Team */
 .printuser a:only-child[href*=pesti]::before{
@@ -373,8 +349,6 @@ Verfügbare Farb-Parameter:
     content: "Administrator, Korrekturbeauftragter, News-Team, Übersetzerin";
 }
 
-/* --------------------------*/
-
 /* Cyberion , O4, Übersetzer, Mentor*/
 .printuser a:only-child[href*=doktor-cyberion]::before {
     background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_ub) 34%, var(--de_ub) 64%, var(--de_mt) 66%);
@@ -387,8 +361,6 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=doktor-cyberion]:hover::after {
     content: "Administrator, Übersetzer, Mentor";
 }
-
-/* --------------------------*/
 
 /* Kibanashote , O4. News-Team, Mentor */
 .printuser a:only-child[href*=kibanashote]::before {
@@ -403,8 +375,6 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=kibanashote]:hover::after {
     content: "Administrator, News-Team, Mentor";
 }
-
-/* --------------------------*/
 
 /* Kuttelfisch , O4, Freigabe, Übersetzer */
 .printuser a:only-child[href*=dr-kuttelfisch]::before {
