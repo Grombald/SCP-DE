@@ -133,6 +133,21 @@ Verfügbare Farb-Parameter:
 
 /* --------------------------*/
 
+/* Gramlin ; Mentor */
+.printuser a:only-child[href*=gramlin]::before {
+    background: var(--de_mt);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=gramlin]::after {
+    background: var(--de_mt);
+    content: " ";
+}
+.printuser a:last-child[href*=gramlin]:hover::after {
+    content: "Mentor";
+}
+
+/* --------------------------*/
+
 /* ibimsbluexiio ; News-Team */
 .printuser a:only-child[href*=ibimsbluexiio]::before {
     background: var(--de_nt);
@@ -164,18 +179,19 @@ Verfügbare Farb-Parameter:
 
 /* --------------------------*/
 
-/* Gramlin ; Mentor */
-.printuser a:only-child[href*=gramlin]::before {
+/* Nylo ; Mentor */
+.printuser a:only-child[href*=nylo]::before {
     background: var(--de_mt);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=gramlin]::after {
+.printuser > a:first-child:not(:only-child)[href*=nylo]::after {
     background: var(--de_mt);
     content: " ";
 }
-.printuser a:last-child[href*=gramlin]:hover::after {
+.printuser a:last-child[href*=nylo]:hover::after {
     content: "Mentor";
 }
+
 
 /* --------------------------*/
 
