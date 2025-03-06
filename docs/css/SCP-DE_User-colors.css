@@ -301,15 +301,15 @@ Verfügbare Farb-Parameter:
 /* --------------------------*/
 
 /* Dyten ; Freigabe, Mentor */
-.printuser a:only-child[href*=Dyten]::before{
+.printuser a:only-child[href*=dyten]::before{
     background: linear-gradient(110deg, var(--de_fb) 49%, var(--de_mt) 51%);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=Dyten]::after{
+.printuser > a:first-child:not(:only-child)[href*=dyten]::after{
     background: linear-gradient(var(--de_fb) 6px, #2c2c2c 7px, var(--de_mt) 7px);
     content: " ";
 }
-.printuser a:last-child[href*=Dyten]:hover::after {
+.printuser a:last-child[href*=dyten]:hover::after {
     content: "Freigabebeauftragter, Mentor";
 
 /* --------------------------*/
