@@ -12,41 +12,41 @@ Verfügbare Farb-Parameter:
     --de_ub: Übersetzer
 
 ++ User mit einer Rolle ++
-.printuser a:only-child[href*=dr-ore]::before {
+.printuser a:only-child[href*=user]::before {
     background: var(--de_xx);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=dr-ore]::after {
+.printuser > a:first-child:not(:only-child)[href*=user]::after {
     background: var(--de_xx);
     content: " ";
 }
-.printuser a:last-child[href*=dr-ore]:hover::after {
+.printuser a:last-child[href*=user]:hover::after {
     content: "XX";
 }
 
 ++ Zwei Rollen ++
-.printuser a:only-child[href*=dr-kuttelfisch]::before{
+.printuser a:only-child[href*=user]::before{
     background: linear-gradient(110deg, var(--de_xx) 49%, var(--de_yy) 51%);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=dr-kuttelfisch]::after{
+.printuser > a:first-child:not(:only-child)[href*=user]::after{
     background: linear-gradient(var(--de_xx) 6px, #2c2c2c 7px, var(--de_yy) 7px);
     content: " ";
 }
-.printuser a:last-child[href*=dr-kuttelfisch]:hover::after {
+.printuser a:last-child[href*=user]:hover::after {
     content: "XX, YY";
 }
 
 ++ Drei Rollen ++
-.printuser a:only-child[href*=doktor-cyberion]::before {
+.printuser a:only-child[href*=user]::before {
     background: linear-gradient(110deg, var(--de_xx) 32%, var(--de_yy) 34%, var(--de_yy) 64%, var(--de_zz) 66%);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=doktor-cyberion]::after {
+.printuser > a:first-child:not(:only-child)[href*=user]::after {
     background: linear-gradient(var(--de_xx) 4px, #2c2c2c, var(--de_yy) 5px, var(--de_yy) 9px, #2c2c2c, var(--de_zz) 10px);
     content: " ";
 }
-.printuser a:last-child[href*=doktor-cyberion]:hover::after {
+.printuser a:last-child[href*=user]:hover::after {
     content: "XX, YY, ZZ";
 }
 
@@ -54,8 +54,39 @@ Verfügbare Farb-Parameter:
 */
 
 /* ----- Users -----*/
+/* ----- Eine Rolle -----*/
 
-/* Ore */
+/* Aplhaorion ; Übersetzer */
+.printuser a:only-child[href*=alphaorion]::before {
+    background: var(--de_ub);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=alphaorion]::after {
+    background: var(--de_ub);
+    content: " ";
+}
+.printuser a:last-child[href*=alphaorion]:hover::after {
+    content: "Übersetzer";
+}
+
+/* --------------------------*/
+
+/* Archetyp ; Übersetzer */
+.printuser a:only-child[href*=archetyp]::before {
+    background: var(--de_ub);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=archetyp]::after {
+    background: var(--de_ub);
+    content: " ";
+}
+.printuser a:last-child[href*=archetyp]:hover::after {
+    content: "Übersetzer";
+}
+
+/* --------------------------*/
+
+/* Dr Ore ; Freigabe */
 .printuser a:only-child[href*=dr-ore]::before {
     background: var(--de_fb);
     content: " ";
@@ -68,175 +99,9 @@ Verfügbare Farb-Parameter:
     content: "Freigabebeauftragter";
 }
 
+/* --------------------------*/
 
-
-/* Kuttelfisch */
-.printuser a:only-child[href*=dr-kuttelfisch]::before {
-    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_fb) 34%, var(--de_fb) 64%, var(--de_ub) 66%);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=dr-kuttelfisch]::after {
-    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_fb) 5px, var(--de_fb) 9px, #2c2c2c, var(--de_ub) 10px);
-    content: " ";
-}
-.printuser a:last-child[href*=dr-kuttelfisch]:hover::after {
-    content: "Administrator, Freigabebeauftragter, Übersetzer";
-}
-
-
-/* Rossboss */
-.printuser a:only-child[href*=rossboss02]::before {
-    background: var(--de_o4);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=rossboss02]::after {
-    background: var(--de_o4);
-    content: " ";
-}
-.printuser a:last-child[href*=rossboss02]:hover::after {
-    content: "Administrator";
-}
-
-/* Kibanashote */
-.printuser a:only-child[href*=kibanashote]::before {
-    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_nt) 34%, var(--de_nt) 64%, var(--de_mt) 66%);
-    content: " ";
-	width: 24px;
-}
-.printuser > a:first-child:not(:only-child)[href*=kibanashote]::after {
-    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_nt) 5px, var(--de_nt) 9px, #2c2c2c, var(--de_mt) 10px);
-    content: " ";
-}
-.printuser a:last-child[href*=kibanashote]:hover::after {
-    content: "Administrator, News-Team, Mentor";
-}
-
-/* Cyberion */
-.printuser a:only-child[href*=doktor-cyberion]::before {
-    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_ub) 34%, var(--de_ub) 64%, var(--de_mt) 66%);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=doktor-cyberion]::after {
-    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_ub) 5px, var(--de_ub) 9px, #2c2c2c, var(--de_mt) 10px);
-    content: " ";
-}
-.printuser a:last-child[href*=doktor-cyberion]:hover::after {
-    content: "Administrator, Übersetzer, Mentor";
-}
-
-
-/* Dr Nieliux */
-.printuser a:only-child[href*=dr-nieliux]::before{
-    background: linear-gradient(110deg, var(--de_md) 49%, var(--de_ub) 51%);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=dr-nieliux]::after{
-    background: linear-gradient(var(--de_md) 6px, #2c2c2c 7px, var(--de_ub) 7px);
-    content: "Moderator, Übersetzer";
-}
-.printuser a:last-child[href*=dr-nieliux]:hover::after {
-    content: "XX, YY";
-}
-
-/* Flaming, Korrektur, Mentor */
-.printuser a:only-child[href*=flaming2204]::before {
-    background: linear-gradient(110deg, var(--de_kb) 49%, var(--de_mt) 51%);
-    content: " ";
-	width: 24px;
-}
-.printuser > a:first-child:not(:only-child)[href*=flaming2204]::after {
-    background: linear-gradient(var(--de_kb) 6px, #2c2c2c 7px, var(--de_mt) 7px);
-    content: " ";
-}
-.printuser a:last-child[href*=flaming2204]:hover::after {
-    content: "Korrekturbeauftragter, Mentor";
-}
-
-/* Allnyta, Mod, Freigabe */
-.printuser a:only-child[href*=allnyta]::before {
-    background: linear-gradient(110deg, var(--de_md) 49%, var(--de_fb) 51%);
-    content: " ";
-	width: 24px;
-}
-.printuser > a:first-child:not(:only-child)[href*=allnyta]::after {
-    background: linear-gradient(var(--de_md) 6px, #2c2c2c 7px, var(--de_fb) 7px);
-    content: " ";
-}
-.printuser a:last-child[href*=allnyta]:hover::after {
-    content: "Moderator, Freigabebeauftragter";
-}
-
-/* Übersetzer + Administrator + News-Team */
-.printuser a:only-child[href*=dr-alice]::before {
-    background: linear-gradient(110deg, var(--de_kb) 32%, var(--de_nt) 34%, var(--de_nt) 64%, var(--de_ub) 66%);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=dr-alice]::after {
-    background: linear-gradient(var(--de_04) 4px, #2c2c2c, var(--de_nt) 5px, var(--de_nt) 9px, #2c2c2c, var(--de_ub) 10px);
-    content: " ";
-}
-.printuser a:last-child[href*=dr-alice]:hover::after {
-    content: "Administrator, News-Team, Übersetzerin";
-}
-
-}
-
-/* Vertonungsbeauftragter + News Team */
-.printuser a:only-child[href*=pesti]::before{
-    background: linear-gradient(110deg, var(--de_vb) 49%, var(--de_nt) 51%);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=pesti]::after{
-    background: linear-gradient(var(--de_vb) 6px, #2c2c2c 7px, var(--de_nt) 7px);
-    content: " ";
-}
-.printuser a:last-child[href*=pesti]:hover::after {
-    content: "Vertonungsbeauftragter, News-Team";
-}
-
-/* News-Team */
-.printuser a:only-child[href*=ibimsbluexiio]::before {
-    background: var(--de_nt);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=ibimsbluexiio]::after {
-    background: var(--de_nt);
-    content: " ";
-}
-.printuser a:last-child[href*=ibimsbluexiio]:hover::after {
-    content: "News-Team";
-}
-
-/* Technikteam */
-.printuser a:only-child[href*=survari]::before {
-    background: var(--de_tt);
-    content: " ";
-	width: 8px;
-}
-.printuser > a:first-child:not(:only-child)[href*=survari]::after {
-    background: var(--de_tt);
-    content: " ";
-}
-.printuser a:last-child[href*=survari]:hover::after {
-    content: "Technik-Team";
-}
-
-/* Korrektur */
-.printuser a:only-child[href*=evil-santa]::before {
-    background: var(--de_kb);
-    content: " ";
-	width: 8px;
-}
-.printuser > a:first-child:not(:only-child)[href*=evil-santa]::after {
-    background: var(--de_kb);
-    content: " ";
-}
-.printuser a:last-child[href*=evil-santa]:hover::after{
-    content: "Korrekturbeauftragter";
-}
-
-/* Übersetzer */
-
+/* DrPeterWenzel ; Übersetzer */
 }
 .printuser a:only-child[href*=drpeterwenzel]::before {
     background: var(--de_ub);
@@ -250,68 +115,71 @@ Verfügbare Farb-Parameter:
     content: "Übersetzer";
 }
 
-.printuser a:only-child[href*=archetyp]::before {
-    background: var(--de_ub);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=archetyp]::after {
-    background: var(--de_ub);
-    content: " ";
-}
-.printuser a:last-child[href*=archetyp]:hover::after {
-    content: "Übersetzer";
-}
+/* --------------------------*/
 
-.printuser a:only-child[href*=alphaorion]::before {
-    background: var(--de_ub);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=alphaorion]::after {
-    background: var(--de_ub);
-    content: " ";
-}
-.printuser a:last-child[href*=alphaorion]:hover::after {
-    content: "Übersetzer";
-}
-
-.printuser a:only-child[href*=dr-nieliux]::before {
-    background: var(--de_ub);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=dr-nieliux]::after {
-    background: var(--de_ub);
-    content: " ";
-}
-.printuser a:last-child[href*=dr-nieliux]:hover::after {
-    content: "Übersetzer";
-}
-
-/* Freigabe*/
-.printuser a:only-child[href*=dr-himy]::before {
-    background: var(--de_fb);
+/* Evil Santa ; Korrektur */
+.printuser a:only-child[href*=evil-santa]::before {
+    background: var(--de_kb);
     content: " ";
 	width: 8px;
 }
-.printuser > a:first-child:not(:only-child)[href*=dr-himy]::after {
-    background: var(--de_fb);
+.printuser > a:first-child:not(:only-child)[href*=evil-santa]::after {
+    background: var(--de_kb);
     content: " ";
 }
-.printuser a:last-child[href*=dr-himy]:hover::after {
-    content: "Freigabebeauftragter";
+.printuser a:last-child[href*=evil-santa]:hover::after{
+    content: "Korrekturbeauftragter";
 }
 
-.printuser a:only-child[href*=Dyten]::before {
-    background: var(--de_fb);
+/* --------------------------*/
+
+/* ibimsbluexiio ; News-Team */
+.printuser a:only-child[href*=ibimsbluexiio]::before {
+    background: var(--de_nt);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=Dyten]::after {
-    background: var(--de_fb);
+.printuser > a:first-child:not(:only-child)[href*=ibimsbluexiio]::after {
+    background: var(--de_nt);
     content: " ";
 }
-.printuser a:last-child[href*=Dyten]:hover::after {
-    content: "Freigabebeauftragter";
+.printuser a:last-child[href*=ibimsbluexiio]:hover::after {
+    content: "News-Team";
 }
 
+/* --------------------------*/
+
+/* Kibanashote ; O4 */
+.printuser a:only-child[href*=kibanashote]::before {
+    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_nt) 34%, var(--de_nt) 64%, var(--de_mt) 66%);
+    content: " ";
+	width: 24px;
+}
+.printuser > a:first-child:not(:only-child)[href*=kibanashote]::after {
+    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_nt) 5px, var(--de_nt) 9px, #2c2c2c, var(--de_mt) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=kibanashote]:hover::after {
+    content: "Administrator, News-Team, Mentor";
+}
+
+/* --------------------------*/
+
+/* Gramlin ; Mentor */
+.printuser a:only-child[href*=gramlin]::before {
+    background: var(--de_mt);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=gramlin]::after {
+    background: var(--de_mt);
+    content: " ";
+}
+.printuser a:last-child[href*=gramlin]:hover::after {
+    content: "Mentor";
+}
+
+/* --------------------------*/
+
+/* RogarRabbit ; Freigabe */
 .printuser a:only-child[href*=rogarrabbit]::before {
     background: var(--de_fb);
     content: " ";
@@ -325,6 +193,55 @@ Verfügbare Farb-Parameter:
     content: "Freigabebeauftragter";
 }
 
+/* --------------------------*/
+
+/* Rossboss ; O4 */
+.printuser a:only-child[href*=rossboss02]::before {
+    background: var(--de_o4);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=rossboss02]::after {
+    background: var(--de_o4);
+    content: " ";
+}
+.printuser a:last-child[href*=rossboss02]:hover::after {
+    content: "Master-Administrator";
+}
+
+/* --------------------------*/
+
+/* Suvari ; Technik-Team */
+.printuser a:only-child[href*=survari]::before {
+    background: var(--de_tt);
+    content: " ";
+	width: 8px;
+}
+.printuser > a:first-child:not(:only-child)[href*=survari]::after {
+    background: var(--de_tt);
+    content: " ";
+}
+.printuser a:last-child[href*=survari]:hover::after {
+    content: "Technik-Team";
+}
+
+/* --------------------------*/
+
+/* ThePaperMask ; Mentor */
+.printuser a:only-child[href*=thepapermask]::before {
+    background: var(--de_mt);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=thepapermask]::after {
+    background: var(--de_mt);
+    content: " ";
+}
+.printuser a:last-child[href*=thepapermask]:hover::after {
+    content: "Mentor";
+}
+
+/* --------------------------*/
+
+/* TheValutater ; Freigabe */
 .printuser a:only-child[href*=thevalutater]::before {
     background: var(--de_fb);
     content: " ";
@@ -338,19 +255,152 @@ Verfügbare Farb-Parameter:
     content: "Freigabebeauftragter";
 }
 
-/* Mentor */
-.printuser a:only-child[href*=gramlin]::before,
-.printuser a:only-child[href*=thepapermask]::before {
-    background: var(--de_mt);
+
+
+
+
+
+
+
+/* ----- Zwei Rollen -----*/
+
+/* Allnyta ; Mod, Freigabe */
+.printuser a:only-child[href*=allnyta]::before {
+    background: linear-gradient(110deg, var(--de_md) 49%, var(--de_fb) 51%);
     content: " ";
-	width: 8px;
+	width: 24px;
 }
-.printuser > a:first-child:not(:only-child)[href*=gramlin]::after,
-.printuser > a:first-child:not(:only-child)[href*=thepapermask]::after {
-    background: var(--de_mt);
+.printuser > a:first-child:not(:only-child)[href*=allnyta]::after {
+    background: linear-gradient(var(--de_md) 6px, #2c2c2c 7px, var(--de_fb) 7px);
     content: " ";
 }
-.printuser a:last-child[href*=gramlin]:hover::after,
-.printuser a:last-child[href*=thepapermask]:hover::after{
-    content: "Mentor";
+.printuser a:last-child[href*=allnyta]:hover::after {
+    content: "Moderator, Freigabebeauftragter";
+}
+
+/* --------------------------*/
+
+/* Dr Nieliux ; Moderator, Übersetzer*/
+.printuser a:only-child[href*=dr-nieliux]::before{
+    background: linear-gradient(110deg, var(--de_md) 49%, var(--de_ub) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=dr-nieliux]::after{
+    background: linear-gradient(var(--de_md) 6px, #2c2c2c 7px, var(--de_ub) 7px);
+    content: "Moderator, Übersetzer";
+}
+.printuser a:last-child[href*=dr-nieliux]:hover::after {
+    content: "XX, YY";
+}
+
+/* --------------------------*/
+
+/* Dr Nordsee ; Freigabe, Mentor */
+.printuser a:only-child[href*=dr-nordsee]::before{
+    background: linear-gradient(110deg, var(--de_fb) 49%, var(--de_mt) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=dr-nordsee]::after{
+    background: linear-gradient(var(--de_fb) 6px, #2c2c2c 7px, var(--de_mt) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=dr-nordsee]:hover::after {
+    content: "Freigabebeauftragter, Mentor";
+}
+
+/* --------------------------*/
+
+/* Dyten ; Freigabe, Mentor */
+.printuser a:only-child[href*=Dyten]::before{
+    background: linear-gradient(110deg, var(--de_fb) 49%, var(--de_mt) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=Dyten]::after{
+    background: linear-gradient(var(--de_fb) 6px, #2c2c2c 7px, var(--de_mt) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=Dyten]:hover::after {
+    content: "Freigabebeauftragter, Mentor";
+
+/* --------------------------*/
+
+/* Flaming ; Korrektur, Mentor */
+.printuser a:only-child[href*=flaming2204]::before {
+    background: linear-gradient(110deg, var(--de_kb) 49%, var(--de_mt) 51%);
+    content: " ";
+	width: 24px;
+}
+.printuser > a:first-child:not(:only-child)[href*=flaming2204]::after {
+    background: linear-gradient(var(--de_kb) 6px, #2c2c2c 7px, var(--de_mt) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=flaming2204]:hover::after {
+    content: "Korrekturbeauftragter, Mentor";
+}
+
+/* --------------------------*/
+
+/* Pesti ; Vertonungsbeauftragter, News-Team */
+.printuser a:only-child[href*=pesti]::before{
+    background: linear-gradient(110deg, var(--de_vb) 49%, var(--de_nt) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=pesti]::after{
+    background: linear-gradient(var(--de_vb) 6px, #2c2c2c 7px, var(--de_nt) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=pesti]:hover::after {
+    content: "Vertonungsbeauftragter, News-Team";
+}
+
+
+
+
+
+
+
+
+/* ----- Drei Rollen -----*/
+
+/* Alice ; O4, News-Team, Übersetzer */
+.printuser a:only-child[href*=dr-alice]::before {
+    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_nt) 34%, var(--de_nt) 64%, var(--de_ub) 66%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=dr-alice]::after {
+    background: linear-gradient(var(--de_04) 4px, #2c2c2c, var(--de_nt) 5px, var(--de_nt) 9px, #2c2c2c, var(--de_ub) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=dr-alice]:hover::after {
+    content: "Administrator, Korrekturbeauftragter, News-Team, Übersetzerin";
+}
+
+/* --------------------------*/
+
+/* Cyberion O4, Übersetzer, Mentor*/
+.printuser a:only-child[href*=doktor-cyberion]::before {
+    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_ub) 34%, var(--de_ub) 64%, var(--de_mt) 66%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=doktor-cyberion]::after {
+    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_ub) 5px, var(--de_ub) 9px, #2c2c2c, var(--de_mt) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=doktor-cyberion]:hover::after {
+    content: "Administrator, Übersetzer, Mentor";
+}
+
+/* --------------------------*/
+
+/* Kuttelfisch ; O4, Freigabe, Übersetzer */
+.printuser a:only-child[href*=dr-kuttelfisch]::before {
+    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_fb) 34%, var(--de_fb) 64%, var(--de_ub) 66%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=dr-kuttelfisch]::after {
+    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_fb) 5px, var(--de_fb) 9px, #2c2c2c, var(--de_ub) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=dr-kuttelfisch]:hover::after {
+    content: "Administrator, Freigabebeauftragter, Übersetzer";
 }
