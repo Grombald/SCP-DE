@@ -172,19 +172,6 @@ Verfügbare Farb-Parameter:
     content: "Mentor";
 }
 
-/* Robini , Mentor */
-.printuser a:only-child[href*=robini]::before {
-    background: var(--de_mt);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=robini]::after {
-    background: var(--de_mt);
-    content: " ";
-}
-.printuser a:last-child[href*=robini]:hover::after {
-    content: "Mentor";
-}
-
 /* RogarRabbit , Freigabe */
 .printuser a:only-child[href*=rogarrabbit]::before {
     background: var(--de_fb);
@@ -334,6 +321,18 @@ Verfügbare Farb-Parameter:
     content: "Vertonungsbeauftragter, News-Team";
 }
 
+/* Robini , Mentor */
+.printuser a:only-child[href*=robini]::before{
+    background: linear-gradient(110deg, var(--de_vb) 49%, var(--de_mt) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=robini]::after{
+    background: linear-gradient(var(--de_vb) 6px, #2c2c2c 7px, var(--de_mt) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=robini]:hover::after {
+    content: "Freigabebeauftragter, Mentor";
+}
 /* ----- Drei Rollen -----*/
 
 /* Alice , O4, News-Team, Übersetzer */
