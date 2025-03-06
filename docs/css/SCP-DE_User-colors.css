@@ -102,7 +102,6 @@ Verfügbare Farb-Parameter:
 /* --------------------------*/
 
 /* DrPeterWenzel ; Übersetzer */
-}
 .printuser a:only-child[href*=drpeterwenzel]::before {
     background: var(--de_ub);
     content: " ";
@@ -272,12 +271,6 @@ Verfügbare Farb-Parameter:
 }
 
 
-
-
-
-
-
-
 /* ----- Zwei Rollen -----*/
 
 /* Allnyta ; Mod, Freigabe */
@@ -368,13 +361,6 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=pesti]:hover::after {
     content: "Vertonungsbeauftragter, News-Team";
 }
-
-
-
-
-
-
-
 
 /* ----- Drei Rollen -----*/
 
