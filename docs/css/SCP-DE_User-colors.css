@@ -292,7 +292,7 @@ Verfügbare Farb-Parameter:
     content: " ";
 }
 .printuser a:last-child[href*=dyten]:hover::after {
-    content: "Freigabebeauftragter, Mentor";
+    content: "Freigabebeauftragter, Mentor, Testsubjekt";
 
 /* Flaming , Korrektur, Mentor */
 .printuser a:only-child[href*=flaming2204]::before {
