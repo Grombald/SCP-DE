@@ -93,6 +93,19 @@ Verfügbare Farb-Parameter:
     content: "Übersetzer";
 }
 
+/* Cyberion , Übersetzer*/
+.printuser a:only-child[href*=doktor-cyberion]::before {
+    background: var(--de_ub);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=doktor-cyberion]::after {
+    background: var(--de_ub);
+    content: " ";
+}
+.printuser a:last-child[href*=doktor-cyberion]:hover::after {
+    content: "Übersetzer";
+}
+
 /* Dr Ore , Freigabe */
 .printuser a:only-child[href*=dr-ore]::before {
     background: var(--de_fb);
@@ -103,6 +116,19 @@ Verfügbare Farb-Parameter:
     content: " ";
 }
 .printuser a:last-child[href*=dr-ore]:hover::after {
+    content: "Freigabebeauftragter";
+}
+
+/* Dr Himy, Freigabe */
+.printuser a:only-child[href*=dr-himy]::before {
+    background: var(--de_fb);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=dr-himy]::after {
+    background: var(--de_fb);
+    content: " ";
+}
+.printuser a:last-child[href*=dr-himy]:hover::after {
     content: "Freigabebeauftragter";
 }
 
@@ -117,20 +143,6 @@ Verfügbare Farb-Parameter:
 }
 .printuser a:last-child[href*=drpeterwenzel]:hover::after {
     content: "Übersetzer";
-}
-
-/* Evil Santa , Korrektur */
-.printuser a:only-child[href*=evil-santa]::before {
-    background: var(--de_kb);
-    content: " ";
-	width: 8px;
-}
-.printuser > a:first-child:not(:only-child)[href*=evil-santa]::after {
-    background: var(--de_kb);
-    content: " ";
-}
-.printuser a:last-child[href*=evil-santa]:hover::after{
-    content: "Korrekturbeauftragter";
 }
 
 /* Gramlin , Mentor */
@@ -196,7 +208,7 @@ Verfügbare Farb-Parameter:
     content: " ";
 }
 .printuser a:last-child[href*=rossboss02]:hover::after {
-    content: "Master-Administrator";
+    content: "Master-Administrator, Freigabebeauftragter";
 }
 
 /* Suvari , Technik-Team */
@@ -269,19 +281,6 @@ Verfügbare Farb-Parameter:
     content: "Moderator, Übersetzer";
 }
 
-/* Dr Nordsee , Freigabe, Mentor */
-.printuser a:only-child[href*=dr-nordsee]::before{
-    background: linear-gradient(110deg, var(--de_fb) 49%, var(--de_mt) 51%);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=dr-nordsee]::after{
-    background: linear-gradient(var(--de_fb) 6px, #2c2c2c 7px, var(--de_mt) 7px);
-    content: " ";
-}
-.printuser a:last-child[href*=dr-nordsee]:hover::after {
-    content: "Freigabebeauftragter, Mentor";
-}
-
 /* Dyten , Freigabe, Mentor */
 .printuser a:only-child[href*=dyten]::before{
     background: linear-gradient(110deg, var(--de_fb) 49%, var(--de_mt) 51%);
@@ -293,6 +292,19 @@ Verfügbare Farb-Parameter:
 }
 .printuser a:last-child[href*=dyten]:hover::after {
     content: "Freigabebeauftragter, Mentor";
+}
+
+/* Evil Santa , Korrektur, Übersetzer */
+.printuser a:only-child[href*=evil-santa]::before{
+    background: linear-gradient(110deg, var(--de_kb) 49%, var(--de_ub) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=evil-santa]::after{
+    background: linear-gradient(var(--de_kb) 6px, #2c2c2c 7px, var(--de_ub) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=evil-santa]:hover::after {
+    content: "Korrekturbeauftragter, Übersetzer";
 }
 
 /* Flaming , Korrektur, Mentor */
@@ -334,32 +346,32 @@ Verfügbare Farb-Parameter:
 .printuser a:last-child[href*=robini]:hover::after {
     content: "Freigabebeauftragter, Mentor";
 }
-/* ----- Drei Rollen -----*/
 
+/* ----- Drei Rollen -----*/
 /* Alice , O4, News-Team, Übersetzer */
 .printuser a:only-child[href*=dr-alice]::before {
-    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_mt) 34%, var(--de_mt) 64%, var(--de_ub) 66%);
+    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_kb) 34%, var(--de_kb) 64%, var(--de_ub) 66%);
     content: " ";
 }
 .printuser > a:first-child:not(:only-child)[href*=dr-alice]::after {
-    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_mt) 5px, var(--de_mt) 9px, #2c2c2c, var(--de_ub) 10px);
+    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_kb) 5px, var(--de_kb) 9px, #2c2c2c, var(--de_ub) 10px);
     content: " ";
 }
 .printuser a:last-child[href*=dr-alice]:hover::after {
     content: "Administratorin, Korrekturbeauftragte, News-Team, Übersetzerin";
 }
 
-/* Cyberion , O4, Übersetzer, Mentor*/
-.printuser a:only-child[href*=doktor-cyberion]::before {
-    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_ub) 34%, var(--de_ub) 64%, var(--de_mt) 66%);
+/* Dr Nordsee , Freigabe, Übersetzer, Mentor */
+.printuser a:only-child[href*=dr-nordsee]::before {
+    background: linear-gradient(110deg, var(--de_xx) 32%, var(--de_yy) 34%, var(--de_yy) 64%, var(--de_zz) 66%);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=doktor-cyberion]::after {
-    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_ub) 5px, var(--de_ub) 9px, #2c2c2c, var(--de_mt) 10px);
+.printuser > a:first-child:not(:only-child)[href*=dr-nordsee]::after {
+    background: linear-gradient(var(--de_xx) 4px, #2c2c2c, var(--de_yy) 5px, var(--de_yy) 9px, #2c2c2c, var(--de_zz) 10px);
     content: " ";
 }
-.printuser a:last-child[href*=doktor-cyberion]:hover::after {
-    content: "Administrator, Übersetzer, Mentor";
+.printuser a:last-child[href*=dr-nordsee]:hover::after {
+    content: "Freigabebeauftragter, Übersetzer, Mentor";
 }
 
 /* Kibanashote , O4. News-Team, Mentor */
@@ -376,13 +388,13 @@ Verfügbare Farb-Parameter:
     content: "Administrator, News-Team, Mentor";
 }
 
-/* Kuttelfisch , O4, Freigabe, Übersetzer */
+/* Kuttelfisch , O4, Mentor, Übersetzer */
 .printuser a:only-child[href*=dr-kuttelfisch]::before {
-    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_fb) 34%, var(--de_fb) 64%, var(--de_ub) 66%);
+    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_mt) 34%, var(--de_mt) 64%, var(--de_ub) 66%);
     content: " ";
 }
 .printuser > a:first-child:not(:only-child)[href*=dr-kuttelfisch]::after {
-    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_fb) 5px, var(--de_fb) 9px, #2c2c2c, var(--de_ub) 10px);
+    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_fb) 5px, var(--de_mt) 9px, #2c2c2c, var(--de_ub) 10px);
     content: " ";
 }
 .printuser a:last-child[href*=dr-kuttelfisch]:hover::after {
