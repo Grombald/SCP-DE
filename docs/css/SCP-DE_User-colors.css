@@ -363,11 +363,11 @@ Verfügbare Farb-Parameter:
 
 /* Dr Nordsee , Freigabe, Übersetzer, Mentor */
 .printuser a:only-child[href*=dr-nordsee]::before {
-    background: linear-gradient(110deg, var(--de_xx) 32%, var(--de_yy) 34%, var(--de_yy) 64%, var(--de_zz) 66%);
+    background: linear-gradient(110deg, var(--de_fb) 32%, var(--de_ub) 34%, var(--de_ub) 64%, var(--de_mt) 66%);
     content: " ";
 }
 .printuser > a:first-child:not(:only-child)[href*=dr-nordsee]::after {
-    background: linear-gradient(var(--de_xx) 4px, #2c2c2c, var(--de_yy) 5px, var(--de_yy) 9px, #2c2c2c, var(--de_zz) 10px);
+    background: linear-gradient(var(--de_fb) 4px, #2c2c2c, var(--de_ub) 5px, var(--de_ub) 9px, #2c2c2c, var(--de_mt) 10px);
     content: " ";
 }
 .printuser a:last-child[href*=dr-nordsee]:hover::after {
