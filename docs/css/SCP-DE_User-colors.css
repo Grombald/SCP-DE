@@ -148,15 +148,15 @@ Verfügbare Farb-Parameter:
 
 /* ibimsbluexiio , News-Team */
 .printuser a:only-child[href*=ibimsbluexiio]::before {
-    background: var(--de_nt);
+    background: var(--de_fb);
     content: " ";
 }
 .printuser > a:first-child:not(:only-child)[href*=ibimsbluexiio]::after {
-    background: var(--de_nt);
+    background: var(--de_fb);
     content: " ";
 }
 .printuser a:last-child[href*=ibimsbluexiio]:hover::after {
-    content: "News-Team";
+    content: "Freigabebeauftragter";
 }
 
 /* Nylo , Mentor */
