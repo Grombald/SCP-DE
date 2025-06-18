@@ -93,19 +93,6 @@ Verfügbare Farb-Parameter:
     content: "Übersetzer";
 }
 
-/* Cyberion , Übersetzer*/
-.printuser a:only-child[href*=doktor-cyberion]::before {
-    background: var(--de_ub);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=doktor-cyberion]::after {
-    background: var(--de_ub);
-    content: " ";
-}
-.printuser a:last-child[href*=doktor-cyberion]:hover::after {
-    content: "Übersetzer";
-}
-
 /* Dr Ore , Freigabe */
 .printuser a:only-child[href*=dr-ore]::before {
     background: var(--de_fb);
@@ -266,6 +253,20 @@ Verfügbare Farb-Parameter:
 }
 .printuser a:last-child[href*=allnyta]:hover::after {
     content: "Moderator, Freigabebeauftragter";
+}
+
+
+/* Cyberion , Übersetzer*/
+.printuser a:only-child[href*=doktor-cyberion]::before {
+    background: linear-gradient(110deg, var(--de_mt) 49%, var(--de_ub) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=doktor-cyberion]::after {
+    background: linear-gradient(var(--de_mt) 6px, #2c2c2c 7px, var(--de_ub) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=doktor-cyberion]:hover::after {
+    content: "Übersetzer, Mentor";
 }
 
 /* Dr Nieliux , Moderator, Übersetzer*/
