@@ -256,19 +256,6 @@ Verfügbare Farb-Parameter:
 }
 
 
-/* Cyberion , Übersetzer*/
-.printuser a:only-child[href*=doktor-cyberion]::before {
-    background: linear-gradient(110deg, var(--de_mt) 49%, var(--de_ub) 51%);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=doktor-cyberion]::after {
-    background: linear-gradient(var(--de_mt) 6px, #2c2c2c 7px, var(--de_ub) 7px);
-    content: " ";
-}
-.printuser a:last-child[href*=doktor-cyberion]:hover::after {
-    content: "Übersetzer, Mentor";
-}
-
 /* Dr Nieliux , Moderator, Übersetzer*/
 .printuser a:only-child[href*=dr-nieliux]::before{
     background: linear-gradient(110deg, var(--de_md) 49%, var(--de_ub) 51%);
@@ -400,4 +387,18 @@ Verfügbare Farb-Parameter:
 }
 .printuser a:last-child[href*=dr-kuttelfisch]:hover::after {
     content: "Administrator, Freigabebeauftragter, Übersetzer, Mentor";
+}
+
+
+/* Cyberion , O4, Mentor, Übersetzer */
+.printuser a:only-child[href*=doktor-cyberion]::before {
+    background: linear-gradient(110deg, var(--de_o4) 32%, var(--de_mt) 34%, var(--de_mt) 64%, var(--de_ub) 66%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=doktor-cyberion]::after {
+    background: linear-gradient(var(--de_o4) 4px, #2c2c2c, var(--de_mt) 5px, var(--de_mt) 9px, #2c2c2c, var(--de_ub) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=doktor-cyberion]:hover::after {
+    content: "Administrator, Übersetzer, Mentor";
 }
