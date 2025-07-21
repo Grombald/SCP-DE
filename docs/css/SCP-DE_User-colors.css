@@ -54,19 +54,6 @@ Verfügbare Farb-Parameter:
 /* ----- Users -----*/
 /* ----- Eine Rolle -----*/
 
-/* Aplhaorion , Übersetzer */
-.printuser a:only-child[href*=alphaorion]::before {
-    background: var(--de_ub);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=alphaorion]::after {
-    background: var(--de_ub);
-    content: " ";
-}
-.printuser a:last-child[href*=alphaorion]:hover::after {
-    content: "Übersetzer";
-}
-
 /* Archetyp , Übersetzer */
 .printuser a:only-child[href*=archetyp]::before {
     background: var(--de_ub);
