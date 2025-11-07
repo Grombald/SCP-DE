@@ -213,6 +213,21 @@ Verfügbare Farb-Parameter:
     content: "Technik-Team";
 }
 
+
+/* Tanija, NewsTeam */
+.printuser a:only-child[href*=tanija]::before {
+    background: var(--de_nt);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=tanija]::after {
+    background: var(--de_nt);
+    content: " ";
+}
+.printuser a:last-child[href*=tanija]:hover::after {
+    content: "News-Team";
+}
+
+
 /* ThePaperMask , Mentor */
 .printuser a:only-child[href*=thepapermask]::before {
     background: var(--de_mt);
