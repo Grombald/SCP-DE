@@ -369,6 +369,7 @@ script + div.page-tags:before {
     --de_kb: #27d5bc;
     --de_nt: #7eaed0;
     --de_ub: #00a264;
+    --de_cm: #FF9900;
 }
 .printuser a::before {
     border-radius: 4px;
