@@ -223,7 +223,7 @@ Verfügbare Farb-Parameter:
     content: " ";
 }
 .printuser a:last-child[href*=thepapermask]:hover::after {
-    content: "Mentor";
+    content: "Mentorin";
 }
 
 /* TheValutater , Freigabe */
