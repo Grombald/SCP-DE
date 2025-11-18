@@ -133,19 +133,6 @@ Verfügbare Farb-Parameter:
     content: "Übersetzer";
 }
 
-/* Gramlin , Mentor */
-.printuser a:only-child[href*=gramlin]::before {
-    background: var(--de_mt);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=gramlin]::after {
-    background: var(--de_mt);
-    content: " ";
-}
-.printuser a:last-child[href*=gramlin]:hover::after {
-    content: "Mentor";
-}
-
 /* ibimsbluexiio , News-Team */
 .printuser a:only-child[href*=ibimsbluexiio]::before {
     background: var(--de_fb);
