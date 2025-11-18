@@ -24,7 +24,13 @@
 */
  
 /* ---------------- DE's own extensions ----------------  */
- 
+
+/* Search bar - removes search bar because it doesn't work anyway, just shows the button */
+#search-top-box-input {
+  min-width: 113px;
+  display: none;
+}
+
 /* Translate TOC title */
 #toc .title {
     font-size: 0;
