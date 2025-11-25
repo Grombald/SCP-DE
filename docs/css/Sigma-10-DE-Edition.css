@@ -30,10 +30,338 @@
  
 /* ---------------- DE's own extensions ----------------  */
 
+/* Search bar - removes search bar because it doesn't work anyway, just shows the button */
+#search-top-box-input {
+  min-width: 113px;
+  display: none;
+}
+
+/* Translate TOC title */
+#toc .title {
+    font-size: 0;
+}
+#toc .title::before {
+    content: "Inhaltsverzeichnis";
+    font-size: 12.8px;
+}
+
+/* Display custom (warning) text in file uploading area */
+#file-action-area h2::after {
+    background: #fffff0;
+    border: 1px solid #660;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.5);
+    box-shadow: 0 2px 6px rgba(0,0,0,.5);
+    display: block;
+    color: 330;
+    content: "Bitte keine Dateien größer als 1 MB hochladen! Bei Übersetzungen bitte das Originalbild verlinken.";
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 80%;
+    margin: .7em 0;
+    padding: 1em;
+    text-align: center;
+}
+ 
+script + div.page-tags:before {
+    color: #888;
+    content: "Die Werbung wird von Wikidot (dem Plattformanbieter) geschaltet und für eingeloggte Nutzer nicht angezeigt.";
+    display: block;
+    font-size: 77%;
+    margin: 1em 0;
+    text-align: center;
+} 
+ 
+/* Makes the empty-searchbox text fit */
+#search-top-box-input {
+    min-width: 113px;
+}
+ 
+/* Third topbar variant (for screens narrower than 412px)*/
+#top-bar .mini-top-bar,
+.mini-top-bar {
+    display: none;
+}
+.mini-top-bar {
+    bottom: 0px;
+    position: absolute;
+    right: 1em;
+    z-index: 0;
+}
+@media (max-width: 412px) {
+    #top-bar .top-bar,
+    #top-bar .mobile-top-bar {
+        display: none;
+    }
+    #top-bar .mini-top-bar {
+        display: block;
+    }
+}
+ 
+/* Custom style for new-page-box in sidebar*/
+#side-bar .side-block-new-page {
+    padding: 0 10px;
+}
+ 
+/* Old audio-block style */
+.audio-img-block {
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    margin-right: 1em;
+    background-color: #eee;
+    border: solid 1px #666;
+    padding: 2px 3px;
+    position: relative;
+    top: 1px;
+}
+ 
+/* Hide the "Safe Draft" button to avoid accidents */
+#edit-save-draft-button {
+    display: none;
+}
 
 
+/* Selector buttons */
 
+/* Branch selector */
+.selector {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	border-radius: 5px;
+    border: 1px solid #888;
+    display: inline-block;
+    margin: 0.3em;
+    min-width: 12em;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    padding: 0;
+    text-align: center;
+    width: 45%;
+    width: -webkit-calc(100% / 2 - 1.2em);
+    width: -moz-calc(100% / 2 - 1.2em);
+    width: calc(100% / 2 - 1.2em);
+}
+.selector:hover {
+    background: #ddd;
+}
+.selector p {
+    margin: 0;
+    padding: 0;
+}
+.selector em {
+    display: inline-block;
+    font-size: 130%;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.25em .75em;
+    width: -webkit-calc(100% - 1.5em);
+    width: -moz-calc(100% - 1.5em);
+    width: calc(100% - 1.5em);
+}
+.selector a {
+    color: #000;
+    display: block;
+    width: 100%;
+}
+.selector a:hover {
+    text-decoration: none;
+}
+.selected p {
+    background: #700 url('https://grombald.github.io/Common-Theme/img/yuitabs.png') repeat-x left -1400px;
+    background: var(--ct_col_tab-menu-bg-selected);
+    color: #fff;
+    color: var(--ct_col_tab-menu-bg-selected-txt);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
 
+/* Make the branch menu float to the left on not very wide screens */
+@media (max-width: 1180px) {
+    #top-bar ul li:nth-last-of-type(2) ul {
+        right: 0;
+    }
+}
+
+/* SVG Social media icons */
+:root {
+    --ct_dim_sidebar-link-images: 22px;
+    --ct_bg_sm-icon_deviantart: url('https://grombald.github.io/Common-Theme/svg/sm/sm-icon_deviantArt.svg');
+    --ct_bg_sm-icon_discord: url('https://grombald.github.io/Common-Theme/svg/sm/sm-icon_discord.svg');
+    --ct_bg_sm-icon_facebook: url('https://grombald.github.io/Common-Theme/svg/sm/sm-icon_facebook.svg');
+    --ct_bg_sm-icon_instagram: url('https://grombald.github.io/Common-Theme/svg/sm/sm-icon_instagram.svg');
+    --ct_bg_sm-icon_reddit: url('https://grombald.github.io/Common-Theme/svg/sm/sm-icon_reddit.svg');
+    --ct_bg_sm-icon_twitter: url('https://grombald.github.io/Common-Theme/svg/sm/sm-icon_twitter.svg');
+    --ct_bg_sm-icon_youtube: url('https://grombald.github.io/Common-Theme/svg/sm/sm-icon_youtube.svg');
+    --ct_bg_sm-icon_reddit: url('https://grombald.github.io/Common-Theme/svg/sm/sm-icon_reddit.svg');
+    --ct_bg_sm-icon_sandbox: url('https://grombald.github.io/Common-Theme/svg/sm/sm-icon_sandbox.svg');
+    --ct_bg_sm-icon_de: url('https://grombald.github.io/SCP-DE/svg/sm-icon_de.svg');
+}
+#side-bar .side-links.svg-icons a {
+    width: var(--ct_dim_sidebar-link-images);
+    height: var(--ct_dim_sidebar-link-images);
+    display: inline-block;
+    margin: 0 1px;
+    color: transparent;
+    font-size: 0;
+}
+#side-bar .side-links.svg-icons a[href*="sandbox"] {
+    background-image: var(--ct_bg_sm-icon_sandbox);
+}
+#side-bar .side-links.svg-icons a[href*="scp-wiki-de"] {
+    background-image: var(--ct_bg_sm-icon_de);
+}
+#side-bar .side-links.svg-icons a[href*="chat"],
+#side-bar .side-links.svg-icons a[href*="discord"]{
+    background-image: var(--ct_bg_sm-icon_discord);
+}
+#side-bar .side-links.svg-icons a[href*="youtube"] {
+    background-image: var(--ct_bg_sm-icon_youtube);
+}
+#side-bar .side-links.svg-icons a[href*="facebook"] {
+    background-image: var(--ct_bg_sm-icon_facebook);
+}
+#side-bar .side-links.svg-icons a[href*="twitter"] {
+    background-image: var(--ct_bg_sm-icon_twitter);
+}
+#side-bar .side-links.svg-icons a[href*="instagram"] {
+    background-image: var(--ct_bg_sm-icon_instagram);
+}
+#side-bar .side-links.svg-icons a[href*="deviantart"] {
+    background-image: var(--ct_bg_sm-icon_deviantart);
+}
+#side-bar .side-links.svg-icons a[href*="reddit"] {
+    background-image: var(--ct_bg_sm-icon_reddit);
+}
+
+/* New sidebar icons */
+#side-bar .menu-item.scp p::before {
+    content: "•";
+    background-image: url('https://grombald.github.io/Common-Theme/img/scp.png');
+    background-image: var(--ct_bg_sidebar-item-scp);
+}
+#side-bar .menu-item.news p::before {
+    content: "•";
+    background-image: url('https://grombald.github.io/Common-Theme/img/news.png');
+    background-image: var(--ct_bg_sidebar-item-news);
+}
+#side-bar .menu-item.random p::before {
+    content: "•";
+    background-image: url('https://grombald.github.io/Common-Theme/img/random.png');
+    background-image: var(--ct_bg_sidebar-item-random);
+}
+#side-bar .menu-item.user p::before {
+    content: "•";
+    background-image: url('https://grombald.github.io/Common-Theme/img/user.png');
+    background-image: var(--ct_bg_sidebar-item-user);
+}
+
+#side-bar .side-block {
+    color: #600;
+    color: var(--ct_col_sidebar-elements);
+}
+#side-bar .menu-item.expandable + .collapsible-block {
+    margin-top: 0;
+}
+#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-folded,
+#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-unfolded-link {
+    height: 0;
+    text-align: right;
+    border: 0;
+}
+#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-link {
+    top: -19px;
+    position: relative;
+    font-size: 0;
+}
+#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-link::before {
+    font-size: 9pt;
+}
+#side-bar .menu-item.expandable + .collapsible-block .menu-item {
+    border: none;
+    border-left: 1px dashed var(--ct_col_sidebar-elements);
+    margin: 0 0 0 4px;
+    padding: 0 0 2px 17px;
+}
+#side-bar .menu-item.expandable + .collapsible-block + .menu-item {
+    margin-top: 0;
+}
+
+@media (max-width: 1619px) {
+    .preview-message {
+        right: 0;
+        position: relative;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+@media (min-width: 1620px) {
+    .preview-message {
+        right: -23em;
+        top: 0;
+    }
+}
+@media (min-width: 1679px) {
+    .preview-message {
+        right: -25em;
+    }
+}
+
+/* Better Tables */
+:root {
+    --ct_brd_table: 1px solid #888;
+}
+.b-tables {
+    background: linear-gradient(to bottom, var(--ct_col_table-head) 0%, var(--ct_col_table-head) 50%, var(--ct_bg_body) 50%, var(--ct_bg_body) 100%);
+    border: var(--ct_brd_table);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+#page-content .b-tables table {
+    margin: 0 auto;
+    width: 100%;
+}
+#page-content .b-tables table td,
+#page-content .b-tables table th {
+    border: none;
+}
+#page-content .b-tables table th,
+#page-content .b-tables table td:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+#page-content .b-tables.two-rows table tr:nth-child(odd) td:first-child {
+    font-weight: normal;
+}
+#page-content .b-tables table tr {
+    background: var(--ct_bg_body);
+    border-bottom: var(--ct_brd_table);
+    border-bottom-style: dashed;
+}
+#page-content .b-tables table tr:first-child{
+    border-bottom-style: solid;
+}
+#page-content .b-tables.two-rows table tr:nth-child(even) {
+    border-bottom: none;
+}
+#page-content .b-tables table tr:last-child {
+    border-bottom: none;
+}
+.b-tables .pager {
+    border-top: var(--ct_brd_table);
+    padding: .5em 0;
+    margin: 2px 0 0 0;
+}
 
 /* ----  Staff colors  ---- */
 
