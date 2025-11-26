@@ -412,6 +412,28 @@ li.folded > .colmod-content {
     text-decoration:none;
 }
 
+/* Colmod in the sidebar */
+#side-bar .colmod-block ul {
+    margin-top: 10px;
+    padding: 0;
+}
+#side-bar .colmod-link-top a {
+    color: #600;
+    color: var(--ct_col_sidebar-elements);
+    font-size: 9pt;
+    font-weight: bold;
+    padding-left: 15px;
+}
+#side-bar .colmod-link-top a:hover {
+    color: #b01;
+    color: var(--ct_col_link);
+    text-decoration: none;
+}
+#side-bar .colmod-content {
+    border-top: solid 1px #600;
+    border-top: var(--ct_brd_sidebar-elements);
+}
+
 /* Borderless tabs */
 .borderless-tabs .yui-navset .yui-content {
     background: transparent;
