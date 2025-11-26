@@ -607,6 +607,103 @@ li.folded > .colmod-content {
     border: var(--ct_brd_blockquote);
 }
 
+/* Dark mode switch (Dark Mode only works on browsers supporting CSS variables) */
+#top-bar .dark-mode, 
+#top-bar .light-mode {
+    display: none;
+}
+@supports (--foo: green) {
+    #top-bar .dark-mode {
+        display: block;
+    }
+    #top-bar .dark-mode {
+        --ct_dm_col_theme-switch-txt: #eee;
+        --ct_dm_col_theme-switch-bg: #232326;
+        --ct_dm_col_theme-switch-bg-hover: #000;
+        --ct_dm_brd_theme-switch: 2px solid #888;
+    }
+    #top-bar .light-mode {
+        --ct_dm_col_theme-switch-txt: #eee;
+        --ct_dm_col_theme-switch-bg: #333336;
+        --ct_dm_col_theme-switch-bg-hover: #eee;
+        --ct_dm_brd_theme-switch: 2px solid #888;
+        border-radius: 17px;
+    }
+    #top-bar .ct-theme-switch .light-mode {
+        display: none;
+    }
+    #top-bar div.ct-theme-switch {
+        position: absolute;
+        right: 0;
+        top: -135px;
+    }
+    #top-bar .ct-theme-switch * {
+        margin: 0;
+    }
+    #top-bar div.ct-theme-switch .dark-mode a,
+    #top-bar div.ct-theme-switch .light-mode a {
+        background: var(--ct_dm_col_theme-switch-bg);
+        border: var(--ct_dm_brd_theme-switch);
+        border-radius: 17px;
+        box-shadow: 0 0 5px 5px rgba(0,0,0,.1), inset 0 0 1px 1px rgba(0,0,0,.3);
+        color: var(--ct_dm_col_theme-switch-txt);
+        display: block;
+        font-size: 20px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        width: 30px;
+    }
+    #top-bar ul .ct-theme-switch {
+        display: inline-block;
+        float: right;
+        position: relative;
+        top: 0;
+    }
+    #top-bar ul .ct-theme-switch a {
+        font-size: inherit;
+        height: auto;
+        line-height: 1px;
+        padding: 10px 1em;
+        width: auto;
+    }
+    #top-bar .ct-theme-switch:hover a {
+        background-color: transparent;
+        text-decoration: none;
+    }
+    #top-bar .ct-theme-switch:hover .dark-mode a:hover  {
+        --ct_dm_col_theme-switch-txt: #fff;
+        --ct_col_topbar-link: var(--ct_dm_col_theme-switch-txt);
+        background: var(--ct_dm_col_theme-switch-bg-hover);
+    }
+    #top-bar .ct-theme-switch .light-mode:hover {
+        background: var(--ct_dm_col_theme-switch-bg-hover);
+        border-color: var(--ct_dm_col_theme-switch-bg-hover);
+        box-shadow: none;
+    }
+    #top-bar .ct-theme-switch:hover .light-mode a:hover {
+        --ct_dm_col_theme-switch-txt: #333;
+        background: var(--ct_dm_col_theme-switch-bg-hover);
+        border-color: var(--ct_dm_col_theme-switch-bg-hover);
+        box-shadow: 0 0 6px 6px rgba(255,255,255,.5);
+        border-radius: 15px;
+        text-shadow: 0 0 15px #fff;
+    }
+    #top-bar ul .ct-theme-switch:hover {
+        background: rgba(0,0,0,.5);
+        text-shadow: 0 0 5px #000;
+    }
+    #top-bar ul .ct-theme-switch .light-mode:hover {
+        background: var(--ct_dm_col_theme-switch-bg-hover);
+        border-color: transparent;
+    }
+    #top-bar ul .ct-theme-switch:hover .light-mode a:hover {
+        --ct_col_topbar-link: var(--ct_dm_col_theme-switch-txt);
+        border-color: transparent;
+        border-radius: 0;
+    }
+}
+
 /* ---------------- DE's own extensions ----------------  */
 
 /* Search bar - removes search bar because it doesn't work anyway, just shows the button */
