@@ -412,6 +412,81 @@ li.folded > .colmod-content {
     text-decoration:none;
 }
 
+/* Borderless tabs */
+.borderless-tabs .yui-navset .yui-content {
+    background: transparent;
+    border: 0;
+    border-top: solid 3px #444;
+    border-top: solid 3px var(--ct_col_tab-menu-border);
+    padding: .25em 0;
+}
+.borderless-tabs .yui-navset .yui-navset-top .yui-content {
+    padding: .25em 0;
+}
+.borderless-tabs .yui-navset .yui-nav,
+.borderless-tabs .yui-navset .yui-navset-top .yui-nav {
+    border: 0;
+}
+.borderless-tabs .yui-content li {
+    margin: .4em 0;
+}
+.borderless-tabs .yui-content .code {
+    background: #f7f7f7;
+    background: var(--ct_col_code-bg);
+    border-color: #ddd;
+    border-color: var(--ct_col_code-border);
+}
+
+/* ---------------- #3.7 Tabview (YUI-Tabs) ---------------- */
+
+.yui-navset .yui-content{
+    background: #f5f5f5;
+    background: var(--ct_col_tab-bg);
+}
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    border: 1px solid #808080;
+    border: var(--ct_brd_tab_content);
+    border-top-color: #243356;
+    border-top-color: var(--ct_col_tab_content-border-top);
+}
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background: var(--ct_col_tab-menu-bg);
+    border-color: var(--ct_col_tab-menu-border);
+    color: var(--ct_col_tab-menu-text);
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover { 
+    background: var(--ct_col_tab-menu-bg-selected);
+    color: #fff;
+    color: var(--ct_col_tab-menu-bg-selected-txt);
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: var(--ct_col_tab-menu-bg-hover);
+    text-decoration: none;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: #444;
+    border-color: var(--ct_col_tab-menu-border);
+}
+.yui-navset li {
+    line-height: normal;
+}
+
+/* Invert colors of code-boxes in tabs*/
+.yui-content blockquote,
+.yui-content .blockquote,
+.yui-content .code {
+    background: #fff;
+    background: var(--ct_bg_body);
+    border-color: #999;
+    border: var(--ct_brd_blockquote);
+}
+
 /* ---------------- DE's own extensions ----------------  */
 
 /* Search bar - removes search bar because it doesn't work anyway, just shows the button */
