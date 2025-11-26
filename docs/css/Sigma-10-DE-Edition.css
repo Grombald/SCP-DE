@@ -27,7 +27,261 @@
     - Colmod by Boyu12
     - Dark Mode switch by Vizlox
 */
- 
+
+/* ---------------- Common Theme includes ------------------ */
+
+/* ------------- #5.1 Content Panel ------------- */
+
+.content-panel {
+    background-color: #999990;
+    border: solid 1px #888880;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px #bbb;
+    box-shadow: 0 2px 6px rgba(0,0,0,.5),
+        inset 0 1px rgba(255,255,255,.3),
+        inset 0 10px rgba(255,255,255,.2),
+        inset 0 10px 20px rgba(255,255,255,.25),
+        inset 0 -15px 30px rgba(0,0,0,.1);
+    margin: 10px 0 15px;
+}
+.content-panel.standalone {
+    background: #fcfdfb;
+}
+.content-panel.series {
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.content-panel.centered {
+    text-align: center;
+}
+.content-panel.left-column {
+    float: left;
+    width: 48%;
+}
+.content-panel.right-column {
+    float: right;
+    width: 48%;
+}
+.content-panel .panel-heading {
+    padding: 2px 10px;
+    color: #fff;
+    font-size: 90%;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.35);
+}
+.content-panel .panel-heading > p,
+.content-panel .panel-footer > p {
+    margin: 0;
+}
+.content-panel .panel-body {
+    background: #fff9f0 url('https://grombald.github.io/Common-Theme/img/panel-bg-gradient-reverse.png') bottom repeat-x;
+    padding: 5px 10px;
+}
+.content-panel .panel-footer {
+    color: #fffff0;
+    font-size: 80%;
+    font-weight: bold;
+    padding: 1px 10px;
+    text-align: right;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+.content-panel .panel-footer a {
+    color: #fff;
+}
+.content-panel .content-toc {
+    box-shadow: inset 1px 2px 6px rgba(0,0,0,.15);
+    background-color: #fff;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    float: right;
+    margin: 20px 0 5px 5px;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+.unmargined > p {
+    margin: 0;
+    line-height: 100%;
+}
+.alternate {
+    padding: 5px 10px;
+}
+.alternate:nth-child(even) {
+    background-color: rgba(255,255,255,.9);
+    border-top: solid 1px #eeeee0;
+    border-bottom: solid 1px #eeeee0;
+}
+.content-panel .panel-body.alt-container {
+    padding: 0;
+}
+
+/* ------------- #5.2 White-paper ------------- */
+
+.white-paper h1, .white-paper .h1, .white-paper h2, .white-paper .h2, .white-paper h3, .white-paper .h3, .white-paper h4, .white-paper .h4, .white-paper h5, .white-paper .h5, .white-paper h6, .white-paper .h6,
+.white-paper .wp_title, .white-paper .wp_sub-title, .white-paper .wp_section-title, .wp_sheet .toc-title,
+.white-paper .col-title .collapsible-block-link, .white-paper .col-title .foldable-list-container {
+    font-family: 'Andale Mono', 'Courier New', Courier, monospace;
+    font-family: var(--ct_fnt_white-paper-titles);
+}
+.white-paper .wp_sheet {
+    background-color: #FFF;
+    background-color: var(--ct_bg_white-paper-sheet);
+    border: solid 1px #888880;
+    border: var(--ct_brd_white-paper-sheet);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.35);
+    margin: 10px 0 20px;
+    padding: 0 20px;
+}
+.white-paper h1,
+.white-paper .h1 {
+    color: #000;
+}
+.white-paper h2,
+.white-paper .h2 {
+    font-size: 130%;
+    font-weight: 700;
+    line-height: 200%;
+    margin-bottom: 0;
+}
+.white-paper h2 ~ p,
+.white-paper .h2 ~ p {
+    margin-top: 0;
+}
+.white-paper .wp_title {
+    border-bottom: 1px solid #888;
+    border-bottom: var(--ct_brd_white-paper-titles);
+    color: #000;
+    color: var(--ct_col_white-paper-titles-txt);
+    display: block;
+    font-size: 350%;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0 0 .75em;
+    padding: .5em 0 .6em;
+    text-align: center;
+}
+.white-paper .wp_sub-title {
+    color: #000;
+    color: var(--ct_col_white-paper-titles-txt);
+    display: block;
+    font-size: 250%;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 2em 0 1em;
+    text-align: center;
+}
+.white-paper .wp_section-title {
+    font-size: 130%;
+    font-weight: 700;
+    line-height: 200%;
+}
+.white-paper .collapsible-block {
+    margin-bottom: 1.5em;
+    padding-top: .5em;
+}
+.white-paper .col-title .collapsible-block-link,
+.white-paper .col-title .foldable-list-container {
+    font-size: 130%;
+    font-weight: 700;
+    line-height: 200%;
+}
+
+.wp_sheet #toc,
+.wp_sheet .toc {
+    background-color: #fff;
+    background-color: var(--ct_bg_white-paper-sheet);
+    border: solid 1px #ccc;
+    border: var(--ct_brd_white-paper-toc);
+    border-radius: 10px;
+    box-shadow: inset 1px 2px 4px rgba(0,0,0,.15);
+    margin: 4px 0 5px 20px;
+    white-space: nowrap;
+}
+.wp_sheet .toc-title {
+    font-size: 115%;
+    font-weight: bold;
+    text-align: center
+}
+
+/* Colmod in the sidebar */
+#side-bar .colmod-block ul {
+    margin-top: 10px;
+    padding: 0;
+}
+#side-bar .colmod-link-top a {
+    color: #600;
+    color: var(--ct_col_sidebar-elements);
+    font-size: 9pt;
+    font-weight: bold;
+    padding-left: 15px;
+}
+#side-bar .colmod-link-top a:hover {
+    color: #b01;
+    color: var(--ct_col_link);
+    text-decoration: none;
+}
+#side-bar .colmod-content {
+    border-top: solid 1px #600;
+    border-top: var(--ct_brd_sidebar-elements);
+}
+
+/* ---------------- #4.3 Colmod ---------------- */
+
+.colmod-block > ul,
+.colmod-block > ul > li {
+    display:block;
+    line-height:normal;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.colmod-block > ul > li > ul,
+li.folded > .colmod-link-top a + a,
+li.folded > .colmod-content,
+li.folded > .colmod-link-end a,
+li.unfolded > .colmod-link-top a:first-child {
+    display:none;
+}
+.colmod-content {
+        -webkit-animation:colmod-fade-in .2s ease-in-out;
+    animation:colmod-fade-in .2s ease-in-out;
+        -webkit-animation-timing-function:cubic-bezier(0.3649610494,0,.6350389506,1);
+    animation-timing-function:cubic-bezier(0.3649610494,0,.6350389506,1);
+}
+li.folded > .colmod-content {
+        -webkit-animation-name:none;
+    animation-name:none;
+}
+@-webkit-keyframes colmod-fade-in{
+    from { opacity:0;} to { opacity:1;}
+}
+@keyframes colmod-fade-in {
+    from { opacity:0;} to { opacity:1;}
+}
+[class|="colmod-link"] div.foldable-list-container {
+    display:inline;
+}
+.colmod-collapsiblealt > [class|="colmod-link"],
+.collapsiblealt > .colmod-block > ul > li > [class|="colmod-link"] {
+    margin:0.5em 0;
+    text-align:center;
+}
+.colmod-collapsiblealt > [class|="colmod-link"] a,
+.collapsiblealt > .colmod-block > ul > li > [class|="colmod-link"] a {
+    background-color:#f4f4f4;
+    border:1px solid #aaa;
+    color:#000;
+    padding:0.1em .5em;
+    text-decoration:none;
+}
+.colmod-collapsiblealt > [class|="colmod-link"] a:hover,
+.colmod-collapsiblealt > [class|="colmod-link"] a:active,
+.collapsiblealt > .colmod-block > ul > li > [class|="colmod-link"] a:hover,
+.collapsiblealt > .colmod-block > ul > li > [class|="colmod-link"] a:active {
+    background:#ddd;
+    text-decoration:none;
+}
+
 /* ---------------- DE's own extensions ----------------  */
 
 /* Search bar - removes search bar because it doesn't work anyway, just shows the button */
