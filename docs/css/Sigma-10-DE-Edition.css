@@ -1075,3 +1075,431 @@ script + div.page-tags:before {
 #page-content .highlight-staff .printuser > a:first-child:not(:only-child)::after {
 	display: inline-block;
 }
+
+/* ++++++++++++++++ #7.0 Responsive Web Design ++++++++++++++++ */
+
+@-ms-viewport {
+    width: device-width;
+    zoom: 1;
+}
+@-o-viewport {
+    width: device-width;
+    zoom: 1;
+}
+@viewport {
+    width: device-width;
+    zoom: 1;
+}
+
+
+/* ---------------- #7.1 Basic Query for mobile devices (Up to 767px) ---------------- */
+
+@media (max-width: 767px) {
+    span, a {
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+    #main-content {
+        margin: 0 5%;
+        max-width: 90%;
+        padding: 0;
+        transition: .5s ease-in-out .1s;
+    }
+    #side-bar {
+        background-color: #b88686;
+        background-color: var(--ct_col_m_sidebar-bg);
+        border: none;
+        display: block;
+        height: 100%;
+        left: -25em;
+        max-width: 80%;
+        overflow-y: inherit;
+        padding: 0;
+        position: fixed;
+        transition: left .5s ease-in-out .1s;
+        top: 0;
+        width: 17em;
+        z-index: 10;
+    }
+    #side-bar::after {
+        background-color: rgba(0,0,0,.2);
+        content: "";
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 0;
+    }
+    #side-bar:target {
+        border: 1px solid #dedede;
+        border: var(--ct_brd_m_sidebar);
+        display: block;
+        left: 0;
+        margin: 0;
+        width: 17em;
+        z-index: 10;
+    }
+    #side-bar:target + #main-content {
+        left: 0;
+    }
+    #side-bar:target .close-menu {
+        background: rgba(0,0,0,.3) 1px 1px repeat;
+        display: block;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    .side-bar-container {
+        background-color: #b88686;
+        background-color: var(--ct_col_m_sidebar-bg);
+        border-right: 1px solid #936b6b;
+        border-right: var(--ct_brd_m_sidebar-right);
+        height: 100%;
+        margin-top: -1px;
+        overflow-y: auto;
+            -ms-scroll-chaining: none;
+        overscroll-behavior: contain;
+        padding: 1em 1em 0 1em;
+        width: 100%;
+    }
+    #top-bar .open-menu,
+    #top-bar .open-menu-masked    {
+        display:block;
+    }
+    #top-bar .open-menu a {
+        background-color: #fff;
+        background-color: var(--ct_col_m_sidebar-button-bg);
+        background-image: var(--ct_bg_open-menu-button);
+        border: .2em solid #888;
+        border: var(--ct_brd_m_sidebar-button);
+        border-radius: 3em;
+        color: transparent;
+        display:block;
+        font-family: Tahoma, sans-serif;
+        font-size: 30px;
+        height: 30px;
+        left: .5em;
+        line-height: .85em;
+        position: fixed;
+        text-align: center;
+        top: .5em;
+        width: 30px;
+        z-index: 15;
+    }
+    #top-bar .open-menu a:hover {
+        box-shadow: 0 0 20px 3px rgba(153,153,153,1);
+        box-shadow: var(--ct_shd_m_sidebar-button);
+    }
+    .page-history tbody tr td:last-child {
+        width: 35%;
+    }
+    .modal-body .table,
+    .modal-body .table ~ div {
+        float: left;
+    }
+    #odialog-container {
+        max-width: 98%;
+        left: 1%;
+    }
+    .owindow {
+        max-width: 99%;
+        min-width: 80%;
+    }
+    .owindow .button-bar {
+        float: right;
+    }
+    .owindow .button-bar a {
+        display: block;
+    }
+    .owindow div .btn-primary {
+        float: none;
+        width: auto;
+    }
+    .owindow div .btn-primary ~ div {
+        width: 100%;
+    }
+    .yui-navset {
+        z-index: 1;
+    }
+    #navi-bar,
+    #navi-bar-shadow {
+        display: none;
+    }
+    td.name {
+        width: 40%;
+    }
+    td.title {
+        width: 30%;
+    }
+}
+
+
+/* ---------------- #7.2 Note Media Query (Up to 580px device width) ---------------- */
+
+@media (max-width: 580px) {
+    :root {
+        --ct_fns_header-txt: 120%;
+    }
+    blockquote,
+    div.blockquote,
+    div.curved {
+        margin: .5em;
+    }
+    #header {
+        background-position: .5em 4.5em;
+        background-size: 66px 66px;
+    }
+    #header h1,
+    #header h2 {
+        margin-left: 80px;
+    }
+    #header h1 a {
+        font-size: 120%;
+        font-size: var(--ct_fns_header-txt);
+    }
+    #header,
+    .mobile-top-bar {
+        max-width: 90%;
+    }
+    .top-bar {
+        display:none;
+    }
+    .mobile-top-bar {
+        display: block;
+    }
+    #search-top-box {
+        top: 104px;
+    }
+    #search-top-box-input {
+        width: 7em;
+    }
+    #side-bar {
+        max-width: 80%;
+    }
+    #main-content {
+        margin: 0 2em 0 2em;
+    }
+    #page-content div,
+    #page-content div table {
+        clear: both;
+    }
+    #page-content div.title {
+        word-break: keep-all;
+    }
+    .content-panel.left-column,
+    .content-panel.right-column  {
+        float: left;
+        width: 99%;
+    }
+    .page-options-bottom a {
+        padding: 0 5px;
+    }
+    .license-area {
+        font-size: .85em;
+    }
+}
+
+
+/* ---------------- #7.3 Mobile Media Query (Up to 479px device width) ---------------- */
+
+@media (max-width: 479px) {
+    :root {
+        --ct_fns_header-txt: 100%;
+    }
+    table.form td,
+    table.form th {
+        float: left;
+        padding: 0;
+    }
+    blockquote,
+    div.blockquote,
+    div.curved {
+        margin: 1em 0;
+    }
+    #header {
+        background-position: 0 5.5em;
+        background-size: 55px 55px;
+    }
+    #header h1,
+    #header h2 {
+        margin-left: 66px;
+    }
+    #header h1 a {
+        font-size: 100%;
+        font-size: var(--ct_fns_header-txt);
+    }
+    .mobile-top-bar {
+        padding: 0;
+    }
+    #search-top-box-input {
+        display: none;
+    } 
+    #main-content {
+        margin: 0 1em 0 1em;
+    }
+    #page-content {
+        font-size: .9em;
+    }
+    .changes-list-item .revision-no {
+        display: none;
+    }
+    #recent-posts-category {
+        width: 100%;
+    }
+    .page-options-bottom a {
+        padding: 0 4px;
+    }
+    #edit-page-title {
+        max-width: 90%;
+    }
+    .license-area {
+        font-size: .8em;
+    }
+}
+
+
+/* ---------------- #7.4 Very narrow Media Query (Up to 385px device width) ---------------- */
+
+@media (max-width: 385px) {
+    #header {
+     background-position: 5% 5.5em;
+    }
+
+    #header h1,
+    #header h2 {
+     margin-left: -webkit-calc(66px + 5%);
+     margin-left: -moz-calc(66px + 5%);
+     margin-left: calc(66px + 5%);
+    }
+
+    #header,
+    #top-bar {
+     width: 100%;
+     max-width: 100%;
+    }
+
+    .mobile-top-bar {
+     width: 100%;
+    }
+
+    #top-bar li a {
+     padding: 10px .5em;
+    }
+    #toc.floatleft,
+    #toc.floatright {
+        display: block;
+        float: none;
+        margin: 1em 0;
+    }
+    .scp-image-block.block-left,
+    .scp-image-block.block-center,
+    .scp-image-block.block-right {
+        float: none;
+        margin: 0 auto 1em auto;
+    }
+}
+
+
+/* ---------------- #7.5 Mini Tablet Media Query (581px - 767px device width) ---------------- */
+
+@media (min-width: 581px) and (max-width: 767px) {
+    :root {
+        --ct_fns_header-txt: 140%;
+    }
+    #header {
+        background-position: 1em 4em;
+        background-size: 77px 77px;
+    }
+    #header h1,
+    #header h2 {
+        margin-left: 93px;
+    }
+    #header h1 a {
+        font-size: 140%;
+        font-size: var(--ct_fns_header-txt);
+    }
+    #header,
+    .mobile-top-bar {
+        max-width: 90%;
+    }
+    .top-bar {
+        display: block;
+    }
+    .mobile-top-bar {
+        display: none;
+    }
+    #search-top-box-input {
+        width: 8em;
+    }
+    #side-bar {
+        max-width: 80%;
+    }
+    #main-content {
+        margin: 0 3em 0 2em;
+    }
+    .page-options-bottom a {
+        padding: 0 6px;
+    }
+    .license-area {
+        font-size: .9em;
+    }
+}
+
+
+/* ---------------- #7.6 Tablet Media Query (768px - 979px device width) ---------------- */
+
+@media (min-width: 768px) and (max-width: 979px) {
+    :root {
+        --ct_fns_header-txt: 160%;
+    }
+    #header {
+        background-position: 1em 4em;
+        background-size: 88px 88px;
+    }
+    #header,
+    #top-bar,
+    #side-bar {
+        max-width: 100%;
+    }
+    #header h1,
+    #header h2 {
+        margin-left: 106px;
+    }
+    #header h1 a {
+        font-size: 160%;
+        font-size: var(--ct_fns_header-txt);
+    }
+    #top-bar ul li:hover ul li a {
+        width: 150px;
+    }
+    .top-bar li {
+        margin: 0;
+    }
+    #main-content {
+        margin: 0 4em 0 20em;
+    }
+    #page-content div,
+    #page-content div table {
+        clear: both;
+    }
+    .content-panel.left-column,
+    .content-panel.right-column  {
+        float: left;
+        width: 99%;
+    }
+    .page-options-bottom a {
+        padding: 0 7px;
+    }
+    .license-area {
+        font-size: .95em;
+    }
+    td.name {
+        width: 40%;
+    }
+    td.title {
+        width: 30%;
+    }
+}
