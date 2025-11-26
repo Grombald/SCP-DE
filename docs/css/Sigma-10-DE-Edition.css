@@ -29,17 +29,46 @@
 */
 
 /* ---------------- Common Theme includes ------------------ */
-
-/* ------------- #5.1 Content Panel ------------- */
-
 :root {
-     /* 2 Account menu */
+
+    /* 1 Common */
+    --ct_bg_body: #fff;
+    --ct_col_body-txt: #333;
+    --ct_col_h1-txt: #901;
+    --ct_col_link: #b01;
+    --ct_col_link-visited: #824;
+    --ct_col_link-newpage: #d61;
+    --ct_col_hr: #aaa;
+
+    /* 2 Header */
+    --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/svg/body_bg.svg');
+    --ct_bg_header-logo: url('https://grombald.github.io/Common-Theme/svg/header-logo.svg');
+    --ct_fnt_header-txt: BauhausLTDemi, Arial, sans-serif;
+    --ct_col_header-txt: #eee;
+    --ct_col_slogan-txt: #f0f0c0;
+    --ct_shd_header-txt: 3px 3px 5px #000;
+    --ct_shd_slogan-txt: 1px 1px 1px rgba(0,0,0,.8);
+    --ct_fns_header-txt: 180%;
+    --ct_fns_slogan-txt: 100%;
+
+    /* 2 Account menu */
     --ct_col_account-menu-txt: #aaa;
     --ct_col_account-menu-link: #ddd;
     --ct_col_account-submenu-bg: #fff;
     --ct_col_account-submenu-link: #700;
     --ct_col_account-submenu-link-hover: #000;
     --ct_brd_account-submenu: 1px solid #888;
+
+    /* 2 Search box */
+    --ct_col_searchbox-txt: #ccc;
+    --ct_brd_searchbox-border: solid 1px #999;
+    --ct_col_searchbox-highlight: #fff;
+    --ct_brd_searchbox-highlight: solid 1px var(--ct_col_searchbox-highlight);
+    --ct_col_searchbox-gradient-1: #300;
+    --ct_col_searchbox-gradient-2: #633;
+    --ct_col_searchbox-gradient-3: #966;
+    --ct_col_searchbox-gradient-4: #c99;
+    --ct_dim_searchbox-border-radius: 5px;
 
     /* 2 Topbar */
     --ct_col_topbar-txt: #fff;
@@ -72,6 +101,26 @@
     --ct_bg_footer: #444;
     --ct_col_footer-txt: #bbb;
     --ct_col_footer-link: #fff;
+
+    /* 4 Content area */
+    --ct_col_page-title: var(--ct_col_h1-txt);
+    --ct_col_page-title-border: #bbb;
+    --ct_fnt_headlines: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+
+    /* 4 Rating-module */
+    --ct_col_rate-primary: #633;
+    --ct_brd_rate-primary: solid 1px var(--ct_col_rate-primary);
+    --ct_col_rate-secondary: #fff6f0;
+    --ct_col_rate-cancel: #966;
+    --ct_col_rate-link-hover: #fffff0;
+    --ct_col_rate-border-heritage: #ccc066;
+    --ct_dim_rate-border-radius: 5px;
+    --ct_dim_rate-cancel-border-radius: calc(var(--ct_dim_rate-border-radius) - 2px);
+    --ct_dim_rate-heritage-border-radius: calc(var(--ct_dim_rate-border-radius) + 3px);
+
+    /* 4 Standard image block */
+    --ct_brd_image-block: solid 1px #666;
+    --ct_col_image-block-contrast: #eee;
 
     /* 4 Tabview (YUI-Tabs) */
     --ct_col_tab-bg: #f5f5f5;
@@ -110,6 +159,8 @@
     --ct_shd_m_sidebar-button: 0 0 20px 3px rgba(153,153,153,1);
     --ct_col_m_sidebar-button-icon: #888;
 }
+
+/* ------------- #5.1 Content Panel ------------- */
 
 .content-panel {
     background-color: #999990;
