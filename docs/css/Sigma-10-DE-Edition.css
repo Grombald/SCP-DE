@@ -609,6 +609,77 @@ li.folded > .colmod-content {
 }
 
 
+/* ---------------- #5.4 Fake- and placeholder classes ---------------- */
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+    font-family: var(--ct_fnt_headlines);
+    font-weight: bold;
+}
+.h2, .h3, .h4, .h5, .h6 {
+    letter-spacing: 1px;
+    margin: .5em 0 .4em;
+    padding: 0;
+}
+.h1 {
+    color: #901;
+    color: var(--ct_col_h1-txt);
+    font-size: 190%;
+    margin: .7em 0 .6em;
+    padding: 0;
+}
+.h2 {
+    font-weight: normal;
+    font-size: 150%;
+}
+.h3 {
+    font-size: 130%;
+}
+.h4 {
+    font-size: 120%;
+}
+.h5 {
+    font-size: 100%;
+}
+.h6 {
+    font-size: 90%;
+}
+.b {
+    font-weight: bold;
+}
+.em {
+    font-style: italic;
+}
+.meta-title {
+    border-bottom: solid 1px #bbb;
+    color: #901;
+    font-weight: normal;
+    margin: 0 0 .6em;
+    padding: 0 0 .25em;
+    font-size: 200%;
+}
+.meta-title p {
+    margin: 0;
+}
+.pseudocrumbs {
+    margin: -1em 0 1em;
+}
+.toc {
+    background-color: #F7F7F7;
+    border: 1px dashed gray;
+    padding: .5em 20px;
+    text-align: left;
+    white-space: nowrap;
+}
+.toc p {
+    margin: 0;
+}
+.toc-title {
+    margin: .2em 0;
+}
+.toc-list {
+    margin: .5em 0;
+}
 
 /* ---------------- DE's own extensions ----------------  */
 
