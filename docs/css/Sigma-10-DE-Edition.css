@@ -412,6 +412,104 @@ li.folded > .colmod-content {
     text-decoration:none;
 }
 
+/* -------------------- Sidebar -------------------- */
+
+/* SVG icons in the sidebar */
+#side-bar .collapsible-block-link::before,
+#side-bar .menu-item p::before,
+#side-bar .colmod-link-top a::before {
+    background-size: 13px 13px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: transparent;
+    display: inline-block;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,.25));
+    margin-left: -16px;
+    text-align: center;
+    width: 16px;
+}
+#side-bar .collapsible-block-folded .collapsible-block-link::before,
+#side-bar .colmod-link-top a:first-child::before {
+    content: "+";
+    background-image: var(--ct_bg_sidebar-expand);
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link::before,
+#side-bar .colmod-link-top a:last-child::before {
+    content: "-";
+    background-image: var(--ct_bg_sidebar-collapse);
+}
+#side-bar .menu-item.default p::before {
+    content: "·";
+    background-image: var(--ct_bg_sidebar-item-default);
+}    
+#side-bar .menu-item.forum p::before {
+    content: "•";
+    background-image: var(--ct_bg_sidebar-item-forum);
+}    
+#side-bar .menu-item.help p::before {
+    content: "?";
+    background-image: var(--ct_bg_sidebar-item-help);
+}    
+#side-bar .menu-item.home p::before {
+    content: "•";
+    background-image: var(--ct_bg_sidebar-item-home);
+}    
+#side-bar .menu-item.main p::before {
+    content: "•";
+    background-image: var(--ct_bg_sidebar-item-main);
+}    
+#side-bar .menu-item.series p::before {
+    content: "•";
+    background-image: var(--ct_bg_sidebar-item-series);
+}
+
+
+/* New sidebar icons */
+#side-bar .menu-item.scp p::before {
+    content: "•";
+    background-image: var(--ct_bg_sidebar-item-scp);
+}
+#side-bar .menu-item.news p::before {
+    content: "•";
+    background-image: var(--ct_bg_sidebar-item-news);
+}
+#side-bar .menu-item.random p::before {
+    content: "•";
+    background-image: var(--ct_bg_sidebar-item-random);
+}
+#side-bar .menu-item.user p::before {
+    content: "•";
+    background-image: var(--ct_bg_sidebar-item-user);
+}
+
+/* Expandable side bar items */
+#side-bar .menu-item.expandable + .collapsible-block {
+    margin-top: 0;
+}
+#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-folded,
+#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-unfolded-link {
+    border: 0;
+    height: 0;
+    text-align: right;
+}
+#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-link {
+    font-size: 0;
+    position: relative;
+    top: -19px;
+}
+#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-link::before {
+    font-size: 9pt;
+}
+#side-bar .menu-item.expandable + .collapsible-block .menu-item {
+    border: none;
+    border-left: 1px dashed var(--ct_col_sidebar-elements);
+    margin: 0 0 0 4px;
+    padding: 0 0 2px 17px;
+}
+#side-bar .menu-item.expandable + .collapsible-block + .menu-item {
+    margin-top: 0;
+}      
+
 /* Colmod in the sidebar */
 #side-bar .colmod-block ul {
     margin-top: 10px;
