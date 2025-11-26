@@ -1004,8 +1004,3 @@ script + div.page-tags:before {
 #page-content .highlight-staff .printuser > a:first-child:not(:only-child)::after {
 	display: inline-block;
 }
-
-/* Hide Homebutton */
-.a .homebutton {
-    display: none;
-}
