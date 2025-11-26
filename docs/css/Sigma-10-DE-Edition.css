@@ -1006,6 +1006,6 @@ script + div.page-tags:before {
 }
 
 /* Hide Homebutton */
-.homebutton {
+.a .homebutton {
     display: none;
 }
