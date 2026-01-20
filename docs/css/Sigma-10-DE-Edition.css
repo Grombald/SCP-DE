@@ -392,34 +392,6 @@ li.folded > .colmod-content {
     text-decoration:none;
 }
 
-/* Expandable side bar items */
-#side-bar .menu-item.expandable + .collapsible-block {
-    margin-top: 0;
-}
-#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-folded,
-#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-unfolded-link {
-    border: 0;
-    height: 0;
-    text-align: right;
-}
-#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-link {
-    font-size: 0;
-    position: relative;
-    top: -19px;
-}
-#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-link::before {
-    font-size: 9pt;
-}
-#side-bar .menu-item.expandable + .collapsible-block .menu-item {
-    border: none;
-    border-left: 1px dashed var(--ct_col_sidebar-elements);
-    margin: 0 0 0 4px;
-    padding: 0 0 2px 17px;
-}
-#side-bar .menu-item.expandable + .collapsible-block + .menu-item {
-    margin-top: 0;
-}      
-
 /* Borderless tabs */
 .borderless-tabs .yui-navset .yui-content {
     background: transparent;
@@ -783,79 +755,6 @@ script + div.page-tags:before {
     background-image: var(--ct_bg_sm-icon_reddit);
 }
 
-/* New sidebar icons */
-#side-bar .menu-item.scp p::before {
-    content: "•";
-    background-image: url('https://grombald.github.io/Common-Theme/img/scp.png');
-    background-image: var(--ct_bg_sidebar-item-scp);
-}
-#side-bar .menu-item.news p::before {
-    content: "•";
-    background-image: url('https://grombald.github.io/Common-Theme/img/news.png');
-    background-image: var(--ct_bg_sidebar-item-news);
-}
-#side-bar .menu-item.random p::before {
-    content: "•";
-    background-image: url('https://grombald.github.io/Common-Theme/img/random.png');
-    background-image: var(--ct_bg_sidebar-item-random);
-}
-#side-bar .menu-item.user p::before {
-    content: "•";
-    background-image: url('https://grombald.github.io/Common-Theme/img/user.png');
-    background-image: var(--ct_bg_sidebar-item-user);
-}
-
-#side-bar .side-block {
-    color: #600;
-    color: var(--ct_col_sidebar-elements);
-}
-#side-bar .menu-item.expandable + .collapsible-block {
-    margin-top: 0;
-}
-#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-folded,
-#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-unfolded-link {
-    height: 0;
-    text-align: right;
-    border: 0;
-}
-#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-link {
-    top: -19px;
-    position: relative;
-    font-size: 0;
-}
-#side-bar .menu-item.expandable + .collapsible-block .collapsible-block-link::before {
-    font-size: 9pt;
-}
-#side-bar .menu-item.expandable + .collapsible-block .menu-item {
-    border: none;
-    border-left: 1px dashed var(--ct_col_sidebar-elements);
-    margin: 0 0 0 4px;
-    padding: 0 0 2px 17px;
-}
-#side-bar .menu-item.expandable + .collapsible-block + .menu-item {
-    margin-top: 0;
-}
-
-@media (max-width: 1619px) {
-    .preview-message {
-        right: 0;
-        position: relative;
-        max-width: 100%;
-        text-align: center;
-    }
-}
-@media (min-width: 1620px) {
-    .preview-message {
-        right: -23em;
-        top: 0;
-    }
-}
-@media (min-width: 1679px) {
-    .preview-message {
-        right: -25em;
-    }
-}
-
 /* Better Tables */
 :root {
     --ct_brd_table: 1px solid #888;
@@ -904,7 +803,6 @@ script + div.page-tags:before {
 }
 
 /* ----  Staff colors  ---- */
-
 /* Define the colors for each role */
 :root {
     --de_o4: #ea2525;
@@ -977,7 +875,6 @@ script + div.page-tags:before {
     width: device-width;
     zoom: 1;
 }
-
 
 /* ---------------- #7.1 Basic Query for mobile devices (Up to 767px) ---------------- */
 
