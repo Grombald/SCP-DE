@@ -467,6 +467,44 @@ li.folded > .colmod-content {
     border: var(--ct_brd_blockquote);
 }
 
+/* Formating classes */
+.justify {
+    text-align: justify;
+}
+.hyphens {
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+.indent,
+.indent p {
+    text-indent: 2em;
+    text-indent: var(--ct_dim_text-indent);
+}
+.no-indent,
+.no-indent p,
+.footnoteref {
+    text-indent: 0;
+}
+
+div.curved {
+    border-radius: 10px;
+    margin: 1em 3em;
+}
+
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
 
 /* ---------------- #5.4 Fake- and placeholder classes ---------------- */
 
