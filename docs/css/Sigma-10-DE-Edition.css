@@ -163,6 +163,19 @@
 
 /* ------------- #5.1 Content Panel ------------- */
 
+#header {
+    /* This is the logo in the header */
+    background: var(--ct_bg_header-logo) 10px 40px no-repeat;
+    background-size: 100px 100px;
+    height: 140px;
+    margin: 0 auto;
+    max-width: 980px;/* Setting maximum width of all page content (980px) */
+    padding-bottom: 22px;/* Room for topbar */
+    position: relative;
+    width: 90%;
+    z-index: 10;
+}
+
 .content-panel {
     background-color: #999990;
     border: solid 1px #888880;
