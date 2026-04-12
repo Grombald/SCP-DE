@@ -54,6 +54,19 @@ Verfügbare Farb-Parameter:
 /* ----- Users -----*/
 /* ----- Eine Rolle -----*/
 
+/* AgentinMelody , Übersetzer */
+.printuser a:only-child[href*=agentinmelody]::before {
+    background: var(--de_fb);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=agentinmelody]::after {
+    background: var(--de_fb);
+    content: " ";
+}
+.printuser a:last-child[href*=agentinmelody]:hover::after {
+    content: "Freigabebeauftragte";
+}
+
 /* Alphaorion , Übersetzer */
 .printuser a:only-child[href*=alphaorion]::before {
     background: var(--de_ub);
