@@ -164,16 +164,8 @@
 /* ------------- #5.1 Content Panel ------------- */
 
 #header {
-    /* This is the logo in the header */
-    background: var(--ct_bg_header-logo) 10px 40px no-repeat;
-    background-size: 100px 100px;
-    height: 140px;
-    margin: 0 auto;
-    max-width: 980px;/* Setting maximum width of all page content (980px) */
-    padding-bottom: 22px;/* Room for topbar */
-    position: relative;
-    width: 90%;
-    z-index: 10;
+    background-image: var(--ct_bg_header-logo);
+    max-width: 980px;
 }
 
 .content-panel {
@@ -198,14 +190,7 @@
 .content-panel.centered {
     text-align: center;
 }
-.content-panel.left-column {
-    float: left;
-    width: 48%;
-}
-.content-panel.right-column {
-    float: right;
-    width: 48%;
-}
+
 .content-panel .panel-heading {
     padding: 2px 10px;
     color: #fff;
@@ -726,9 +711,10 @@ script + div.page-tags:before {
 }
 
 /* Make the branch menu float to the left on not very wide screens */
-@media (max-width: 1180px) {
-    #top-bar ul li:nth-last-of-type(2) ul {
+@media (min-width: 768px) and (max-width: 1180px) {
+    #top-bar .top-bar > ul > li:nth-last-of-type(2) > ul {
         right: 0;
+        left: auto;
     }
 }
 
