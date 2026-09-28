@@ -1,0 +1,276 @@
+@import url('http://cdnjs.cloudflare.com/ajax/libs/cc-icons/1.2.1/css/cc-icons.min.css');
+
+#u-credit-view, #u-credit-otherwise {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    z-index: 10;
+}
+#u-credit-view:not(:target), #u-credit-otherwise:not(:target) {
+    opacity: 0;
+    display: none;
+}
+#u-credit-view:target, #u-credit-otherwise:target {
+    opacity: 1;
+    animation-duration: 0.3s;
+    animation-name: fade-in;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-name: fade-in;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: fade-in;
+}
+
+@keyframes fade-in {
+    0% {display: none; opacity: 0;}
+    1% {display: block; opacity: 0;}
+    100% {display: block; opacity: 1;}
+}
+@-moz-keyframes fade-in {
+    0% {display: none; opacity: 0;}
+    1% {display: block; opacity: 0;}
+    100% {display: block; opacity: 1;}
+}
+@-webkit-keyframes fade-in {
+    0% {display: none; opacity: 0;}
+    1% {display: block; opacity: 0;}
+    100% {display: block; opacity: 1;}
+}
+
+.fader{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.fader iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modalcontainer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 400px;
+    max-width: 400px;
+    height: 250px;
+    margin: auto;
+}
+.modalbox{
+    *min-width: 400px;
+    background: #fefefe;
+    background: linear-gradient(#eee 49px,#fefefe 49px,#fefefe);
+    border: #333 solid 1px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(102, 0, 0, .5);
+    padding:4px;
+}
+.modalbox .credit {
+    margin: 2em;
+    max-height: 250px;
+    overflow-y: auto;
+}
+.modalbox .credit p {
+    margin: 0;
+}
+.modalbox .credit:not(:first-child) {
+    margin-top: 0;
+}
+.modalbox .credit:not(:last-child) {
+    margin-bottom: 0;
+}
+.modalbox .credit.otherwise {
+    max-height: 350px;    
+    overflow-y: auto;
+}
+
+#u-credit-view .credit-back {
+    display:none;
+}
+
+#u-credit-otherwise .modalbox {
+    background: linear-gradient(#eee 49px,#fefefe 49px,#fefefe);
+}
+#u-credit-otherwise .creditBottomRate {
+    display:none;
+}
+#u-credit-otherwise hr:last-of-type {
+    margin: 0.5em 2em;
+    opacity: 0;
+}
+
+#u-credit-view-button {
+    display: block;
+    text-align: right;
+}
+
+@media (max-width: 479px) {
+    #page-content .modalbox, #u-credit-otherwise .modalbox {
+        background:linear-gradient(#eee 47px,#fefefe 47px,#fefefe);
+        min-width: unset;
+    }
+}
+@media (max-width: 767px) {
+    #u-credit-view {
+        height: 100%;
+        top: 0;
+    }
+    #page-content .modalcontainer{
+        max-width: 95%;
+    }
+    .modalbox{
+        min-width: 300px;
+    }
+}
+
+.Dendo{
+    display:none;
+    text-align:right;
+}
+//.Dendo .heritage-rating-module{
+    float:right;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    vertical-align: top;
+}
+
+.creditRate {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    float:right;
+    margin-bottom:10px;
+    margin-right:2em;
+}
+.creditRate p{
+    display:inline;
+    padding: 0;
+    margin:0;
+    line-height: 0;
+}
+
+.creditRate .page-rate-widget-box {
+    display: inline;
+    margin:0;
+    padding:0;
+}
+.creditRate .heritage-rating-module {
+    float:right;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    vertical-align: top;
+    margin:0;
+}
+.creditRate .heritage-rating-module .page-rate-widget-box{
+    margin:0;
+}
+.creditRate .audio-img-block {
+    top: 0;
+}
+.rate-box-with-credit-button{
+    background-color: #633 !important;
+    border: solid 1px #633;
+    border: var(--ct_brd_rate-primary);
+    border-radius: 5px;
+    border-radius: var(--ct_dim_rate-border-radius);
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+.rate-box-with-credit-button .page-rate-widget-box{
+    box-shadow: none;
+}
+.rate-box-with-credit-button .creditButton {
+    display: inline-block;
+}
+.creditRate .rateBox{
+    display:inline-block;
+}
+.creditRate .rateBox p{
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+.creditButton p{
+    font-size: 0.8em;
+}
+.creditButton p a{
+    width: 17px;
+    margin-left: -5px;
+    padding-top: 0.5px;
+    color: #ffffff;
+    border-left: solid 1px #966;
+    border-left: solid 1px var(--ct_col_rate-cancel);
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+}
+.creditButton p a:hover {
+    color: #3498db;
+}
+
+.heritage-rating-module .creditButton p a{
+    margin-left: 1px;
+    margin-right: -5px;
+    padding-left: 1px;
+    padding-top: 1.5px;
+    color: #ffffff;
+    font-size: 13px;
+}
+.heritage-rating-module .creditButton p a:hover {
+    color: #ccc066;
+}
+
+.modalbox .page-rate-widget-box {
+    margin-right: 0;
+}
+
+.credit-back .back a {
+    display: none;
+}
+.credit-back .back a::before {
+    content: "Zurück";
+}
+
+.creditButtonStandalone p a{
+    display: block;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    background: #744;
+    box-shadow: 0 0 3px gray;
+    font-size: 12px;
+}
+.creditButtonStandalone p a:hover {
+    background: #3498db;
+}
