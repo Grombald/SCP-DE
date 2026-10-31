@@ -6,7 +6,23 @@
 :root {
     --ct_dim_sidebar-link-images: 22px;
 }
- 
+
+div#container-wrap {
+	background: url('https://grombald.github.io/SCP-DE/docs/img/body_bg_sandbox.png')
+		top left repeat-x;
+}
+
+#header {
+	height: 140px;
+	position: relative;
+	z-index: 10;
+	padding-bottom: 22px; /* FOR MENU */
+	background: url('https://grombald.github.io/Common-Theme/blob/master/docs/img/sandbox/logo.png')
+		10px 40px no-repeat;
+	background-size: 100px;
+	background-position: 10px 64%;
+}
+
 /* Referenz-Box */
 .ref-box {
     background: #e5ffe5;
