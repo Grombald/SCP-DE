@@ -5,20 +5,7 @@
  
 :root {
     --ct_dim_sidebar-link-images: 22px;
-    --ct_bg_sb_header-image: url('https://grombald.github.io/SCP-DE/docs/img/body_bg_sandbox.png');
-    --ct_bg_sb_header-logo: url('https://grombald.github.io/Common-Theme/docs/img/sandbox/logo.png');
 }
-
-#header {
-    background-image: var(--ct_bg_sb_header-logo);
-    max-width: 980px;
-}
-
-div#container-wrap {
-	background: var(--ct_bg_sb_header-image)
-		top left repeat-x;
-}
-
 
 /* Referenz-Box */
 .ref-box {
