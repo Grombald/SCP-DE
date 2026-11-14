@@ -7,6 +7,10 @@
     --ct_dim_sidebar-link-images: 22px;
 }
 
+.search-top-box {
+    display: none;
+}
+
 /* Referenz-Box */
 .ref-box {
     background: #e5ffe5;
